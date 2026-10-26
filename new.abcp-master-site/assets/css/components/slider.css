@@ -1,0 +1,11 @@
+.slider{position:relative;border-radius:var(--radius-lg);overflow:hidden;background:linear-gradient(135deg,#d8eaf4,#bcd8e8)}
+.slider .slider__slide{position:absolute;inset:0;border-radius:0;opacity:0;visibility:hidden;transition:opacity .9s var(--ease),visibility .9s}
+.slider .slider__slide.is-active{opacity:1;visibility:visible}
+.slider .slider__slide.is-active>img{animation:kenburns 7s ease-out forwards}
+.slider__controls{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);display:flex;align-items:center;gap:14px;padding:8px;border-radius:999px;background:rgba(255,255,255,.88);backdrop-filter:blur(12px);box-shadow:var(--shadow-md);z-index:4}
+.slider__btn{width:46px;height:46px;border-radius:50%;background:var(--primary);color:#fff;display:grid;place-items:center;transition:background .3s,transform .3s var(--ease)}
+.slider__btn svg{width:20px;height:20px}
+.slider__btn[data-prev] svg{transform:scaleX(-1)}
+.slider__btn:hover{background:var(--dark);transform:scale(1.1)}
+.slider__count{font-weight:700;min-width:74px;text-align:center;font-variant-numeric:tabular-nums}
+.slider__count b{color:var(--primary)}

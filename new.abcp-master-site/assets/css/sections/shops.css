@@ -1,0 +1,19 @@
+/* Блок «Магазины, которые я запускал и сопровождаю»: две бегущие строки, которые можно листать */
+.shops{margin-top:clamp(20px,2.4vw,32px);padding:clamp(22px,3vw,44px) 0 clamp(18px,2.4vw,32px);overflow:hidden}
+.shops__head{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:0 clamp(20px,3vw,44px);margin-bottom:clamp(14px,2vw,24px)}
+.shops__head h3{font-size:clamp(1.3rem,2.3vw,1.9rem)}
+.shops__nav{display:flex;gap:10px}
+.shops__rows{display:flex;flex-direction:column;gap:16px}
+.shops__row{display:flex;gap:16px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:8px 0 14px;cursor:grab;user-select:none;-webkit-user-select:none;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.shops__row::-webkit-scrollbar{display:none}
+.shops__row.is-dragging{cursor:grabbing}
+.shop{flex:none;width:clamp(240px,20vw,340px);display:flex;flex-direction:column;gap:14px;padding:12px 12px 20px;border-radius:var(--radius-lg);background:var(--primary-50);border:1px solid var(--line);transition:transform .4s var(--ease),box-shadow .4s var(--ease),background .3s,border-color .3s}
+.shop:hover{transform:translateY(-5px);background:#fff;border-color:rgba(7,104,154,.35);box-shadow:var(--shadow-md)}
+.shop__logo{aspect-ratio:16/10;border-radius:var(--radius-md);background:#fff;border:1px solid var(--line)}
+.shop__logo>img{object-fit:contain;padding:18px;-webkit-user-drag:none}
+.shop__logo.is-empty::after{content:"Логотип"}
+.shop__body{display:flex;flex-direction:column;align-items:center;gap:4px;padding:0 8px;text-align:center}
+.shop__name{font-weight:800;font-size:1.08rem;line-height:1.25}
+.shop__city{display:inline-flex;align-items:center;gap:6px;color:var(--muted);font-size:.98rem}
+.shop__city svg{width:17px;height:17px;flex:none;color:var(--primary)}
+@media(max-width:480px){.shop{width:72vw}.shops__nav .slider__btn{width:42px;height:42px}}

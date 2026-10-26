@@ -1,0 +1,17 @@
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:17px 32px;border-radius:999px;font-weight:700;font-size:1rem;line-height:1;overflow:hidden;isolation:isolate;white-space:nowrap;transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .3s,color .3s}
+.btn svg{width:18px;height:18px;transition:transform .3s var(--ease)}
+.btn:hover svg{transform:translateX(4px)}
+.btn--primary{background:var(--primary);color:#fff;box-shadow:0 10px 26px rgba(7,104,154,.35)}
+.btn--primary::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.38) 50%,transparent 70%);transform:translateX(-120%);z-index:-1}
+.btn--primary:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(7,104,154,.45)}
+.btn--primary:hover::after{transform:translateX(120%);transition:transform .9s var(--ease)}
+.btn--ghost{background:#fff;color:var(--dark);box-shadow:inset 0 0 0 2px var(--line)}
+.btn--ghost:hover{box-shadow:inset 0 0 0 2px var(--primary);color:var(--primary);transform:translateY(-3px)}
+.btn--dark{background:var(--dark);color:#fff}
+.btn--dark:hover{background:var(--primary);transform:translateY(-3px);box-shadow:0 14px 30px rgba(7,104,154,.35)}
+.btn--light{background:#fff;color:var(--primary)}
+.btn--light:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(0,0,0,.2)}
+.btn--sm{padding:13px 24px;font-size:.92rem}
+.btn--block{width:100%}
+.btn--msg{background:var(--bg);color:var(--primary);padding:12px 22px;font-size:.92rem}
+.btn--msg:hover{background:var(--primary);color:#fff;transform:translateY(-3px)}

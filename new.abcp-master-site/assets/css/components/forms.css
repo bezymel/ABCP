@@ -1,0 +1,27 @@
+.form{display:grid;gap:14px}
+.form__row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{position:relative}
+.field input,.field textarea{width:100%;padding:26px 20px 10px;border:2px solid transparent;border-radius:var(--radius-sm);background:var(--bg);outline:0;transition:border-color .3s,background .3s,box-shadow .3s}
+.field textarea{min-height:130px;resize:vertical}
+.field label{position:absolute;left:22px;top:18px;color:var(--muted);pointer-events:none;transform-origin:left top;transition:transform .25s var(--ease),color .25s}
+.field input:focus,.field textarea:focus{border-color:var(--primary);background:#fff;box-shadow:0 0 0 5px rgba(7,104,154,.1)}
+.field input:focus+label,.field input:not(:placeholder-shown)+label,.field textarea:focus+label,.field textarea:not(:placeholder-shown)+label{transform:translateY(-11px) scale(.76);color:var(--primary)}
+.field.is-invalid input,.field.is-invalid textarea{border-color:#d64545;background:#fff7f7}
+.fieldset{border:0;padding:0;margin:0;min-width:0}
+.fieldset legend{font-weight:700;font-size:.92rem;padding:0;margin-bottom:10px}
+.choices{display:flex;flex-wrap:wrap;gap:10px}
+.choice{position:relative}
+.choice input{position:absolute;inset:0;opacity:0;cursor:pointer;margin:0}
+.choice span{display:inline-flex;padding:10px 20px;border-radius:999px;background:var(--bg);font-weight:600;font-size:.92rem;transition:background .3s,color .3s,box-shadow .3s,transform .3s var(--ease)}
+.choice:hover span{transform:translateY(-2px)}
+.choice input:checked+span{background:var(--primary);color:#fff;box-shadow:0 8px 20px rgba(7,104,154,.3)}
+.choice input:focus-visible+span{outline:3px solid rgba(7,104,154,.5);outline-offset:2px}
+.check{display:flex;gap:12px;align-items:flex-start;font-size:.85rem;color:var(--muted);line-height:1.5}
+.check input{width:20px;height:20px;accent-color:var(--primary);flex:none;margin-top:2px}
+.check a{color:var(--primary);text-decoration:underline;text-underline-offset:3px}
+.check.is-invalid{color:#d64545}
+.form__status{min-height:1.4em;font-size:.92rem;font-weight:600}
+.form__status.is-ok{color:#1a8f55}
+.form__status.is-err{color:#d64545}
+.hp{position:absolute;left:-9999px;opacity:0;height:0;overflow:hidden}
+@media(max-width:560px){.form__row{grid-template-columns:1fr}}

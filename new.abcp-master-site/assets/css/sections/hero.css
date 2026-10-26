@@ -1,0 +1,22 @@
+.hero{padding:calc(var(--header-h) + 52px) 0 20px}
+.hero__grid{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:stretch}
+.hero__content{display:flex;flex-direction:column;align-items:flex-start;gap:20px;overflow:hidden}
+.hero__content::after{content:"";position:absolute;width:380px;height:380px;border-radius:50%;border:48px solid var(--primary-50);right:-150px;bottom:-170px;pointer-events:none;animation:spin 40s linear infinite}
+.hero__content>*{position:relative;z-index:1}
+.hero__accent{font-size:1.1rem;font-weight:500}
+.hero__tagline{font-size:1.35rem;font-weight:800;color:var(--primary)}
+.hero__text{color:var(--muted);max-width:620px}
+.hero__actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:4px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;width:100%;margin-top:10px}
+.stats li{background:var(--bg);border-radius:var(--radius-md);padding:16px;display:flex;flex-direction:column;gap:6px;transition:transform .4s var(--ease),background .3s}
+.stats li:hover{transform:translateY(-5px);background:var(--primary-100)}
+.stats strong{font-size:2rem;font-weight:800;color:var(--primary);line-height:1}
+.stats span{font-size:.84rem;color:var(--muted);line-height:1.3}
+.hero__visual{padding:14px;display:flex}
+.hero__visual .slider{flex:1;min-height:460px}
+.float-badge{position:absolute;z-index:6;display:flex;align-items:center;gap:10px;padding:12px 18px;border-radius:18px;background:#fff;box-shadow:var(--shadow-md);font-weight:700;font-size:.92rem;animation:float 5s ease-in-out infinite}
+.float-badge i{width:10px;height:10px;border-radius:50%;background:var(--primary);animation:pulse 2s infinite}
+.float-badge--a{left:-16px;top:12%}
+.float-badge--b{right:-14px;top:30%;animation-name:floatB;animation-delay:-2.5s}
+@media(max-width:1100px){.hero__grid{grid-template-columns:1fr}.hero__visual .slider{min-height:340px;aspect-ratio:16/10}.float-badge--a{left:8px}.float-badge--b{right:8px}}
+@media(max-width:620px){.stats{grid-template-columns:1fr 1fr}.hero__actions .btn{width:100%}.hero{padding-top:calc(var(--header-h) + 36px)}}

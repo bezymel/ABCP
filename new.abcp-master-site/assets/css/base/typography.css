@@ -1,0 +1,8 @@
+h1,h2,h3{font-weight:800;letter-spacing:-.02em;line-height:1.12}
+h1{font-size:clamp(2rem,4.2vw,3.4rem)}
+h2{font-size:clamp(1.7rem,3.4vw,2.7rem)}
+h3{font-size:1.2rem;line-height:1.3}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border-radius:999px;background:var(--primary-100);color:var(--primary);font-weight:700;font-size:.78rem;letter-spacing:.07em;text-transform:uppercase}
+.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--primary);animation:pulse 2s infinite}
+.grad{background:linear-gradient(100deg,var(--primary),var(--accent) 50%,var(--primary));background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:gradMove 6s linear infinite}
+.lead{color:var(--muted);font-size:1.1rem}

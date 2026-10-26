@@ -1,0 +1,6 @@
+.about__card{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,4vw,56px);align-items:center;padding:clamp(18px,2.4vw,28px)}
+.about__media{aspect-ratio:4/5;border-radius:var(--radius-xl)}
+.about__card:hover .about__media>img{transform:scale(1.05)}
+.about__body{display:flex;flex-direction:column;align-items:flex-start;gap:18px;padding:clamp(4px,1.6vw,24px) clamp(4px,2vw,28px) clamp(4px,1.6vw,24px) 0}
+.about__body p{color:var(--muted)}
+@media(max-width:860px){.about__card{grid-template-columns:1fr}.about__media{aspect-ratio:16/11}.about__body{padding:6px 8px 10px}}

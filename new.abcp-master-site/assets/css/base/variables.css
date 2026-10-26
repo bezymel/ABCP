@@ -1,0 +1,11 @@
+/* Переменные: цвета, радиусы, тени */
+:root{
+--bg:#eaf1f6;--card:#fff;--dark:#27292B;--primary:#07689a;
+--primary-600:#055a85;--primary-100:#e1f0f8;--primary-50:#f1f8fc;--accent:#19a3d8;
+--muted:#667380;--line:#dbe6ee;
+--radius-xl:36px;--radius-lg:28px;--radius-md:20px;--radius-sm:14px;
+--shadow-sm:0 4px 18px rgba(7,104,154,.07);--shadow-md:0 16px 44px rgba(39,41,43,.10);--shadow-lg:0 30px 70px rgba(7,104,154,.20);
+--ease:cubic-bezier(.22,1,.36,1);
+--container:100%;--gutter:clamp(14px,2.6vw,56px);--header-h:84px;
+--font:'Inter','Manrope','Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif;
+}

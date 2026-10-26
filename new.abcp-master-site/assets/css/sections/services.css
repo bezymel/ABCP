@@ -1,0 +1,10 @@
+.services__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.service{display:flex;flex-direction:column;align-items:flex-start;gap:14px;overflow:hidden;padding:clamp(24px,2.4vw,36px)}
+.service__num{width:54px;height:54px;border-radius:18px;background:var(--primary-100);color:var(--primary);display:grid;place-items:center;font-weight:800;transition:background .4s,color .4s,transform .5s var(--ease)}
+.service:hover .service__num{background:var(--primary);color:#fff;transform:rotate(-8deg) scale(1.08)}
+.service p{color:var(--muted);font-size:.98rem}
+.service .chips{margin-top:auto;padding-top:6px}
+.service::after{content:"";position:absolute;left:0;bottom:0;height:5px;width:0;background:linear-gradient(90deg,var(--primary),var(--accent));transition:width .7s var(--ease)}
+.service:hover::after{width:100%}
+@media(max-width:1020px){.services__grid{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.services__grid{grid-template-columns:1fr}}

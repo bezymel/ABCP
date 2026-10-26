@@ -1,0 +1,10 @@
+{
+  "name": "ABCP-мастер — запуск сайтов автозапчастей на ABCP",
+  "short_name": "ABCP-мастер",
+  "lang": "ru",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#07689a",
+  "background_color": "#eaf1f6",
+  "icons": [{"src": "assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}]
+}

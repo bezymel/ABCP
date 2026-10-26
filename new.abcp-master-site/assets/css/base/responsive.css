@@ -1,0 +1,63 @@
+/* Адаптивность: большие экраны → ноутбук → планшет → телефон. Подключается последним. */
+.hero__grid>*,.about__card>*,.contacts__grid>*,.footer__grid>*,.plans>*,.services__grid>*,.price-list>*{min-width:0}
+h1,h2,h3,p,li{overflow-wrap:break-word}
+.footer a{overflow-wrap:anywhere}
+.footer{padding-bottom:calc(18px + env(safe-area-inset-bottom))}
+@media(hover:none){.card--lift:hover,.shop:hover,.stats li:hover{transform:none}}
+
+/* Ноутбук */
+@media(max-width:1280px){
+:root{--gutter:clamp(14px,2.4vw,32px)}
+.footer__grid{gap:28px}
+.reviews__grid{columns:2}
+}
+/* Планшет, альбомная ориентация */
+@media(max-width:1100px){
+body{font-size:16.5px}
+.hero{padding-top:calc(var(--header-h) + 40px)}
+.hero__visual .slider{min-height:380px}
+.services__grid{grid-template-columns:1fr 1fr}
+}
+/* Планшет, портретная ориентация */
+@media(max-width:820px){
+:root{--radius-xl:28px;--radius-lg:22px;--radius-md:18px;--header-h:72px}
+.card{padding:clamp(20px,4vw,30px)}
+.hero__content::after{width:260px;height:260px;border-width:34px}
+.hero__visual .slider{min-height:300px}
+.hero__actions .btn{flex:1 1 220px}
+.stats{grid-template-columns:1fr 1fr}
+.section__head p{font-size:1rem}
+.reviews__top{align-items:flex-start}
+.reviews__grid{columns:1}
+.footer__bottom{flex-wrap:wrap;gap:20px}
+}
+/* Телефон */
+@media(max-width:560px){
+:root{--gutter:12px;--radius-xl:24px;--radius-lg:20px;--radius-md:16px;--header-h:66px}
+body{font-size:16px}
+h1{font-size:1.75rem}
+h2{font-size:1.5rem}
+h3{font-size:1.12rem}
+.section{padding:12px 0}
+.card{padding:20px 18px}
+.eyebrow{font-size:.72rem;padding:7px 12px}
+.btn{padding:15px 22px;white-space:normal;text-align:center;line-height:1.25}
+.hero{padding-top:calc(var(--header-h) + 30px)}
+.hero__tagline{font-size:1.15rem}
+.hero__actions{flex-direction:column;width:100%}
+.hero__actions .btn{width:100%}
+.stats{gap:10px}
+.stats li{padding:14px}
+.stats strong{font-size:1.7rem}
+.hero__visual{padding:10px}
+.hero__visual .slider{min-height:250px}
+.slider__controls{bottom:12px;gap:8px;padding:6px}
+.slider__btn{width:40px;height:40px}
+.slider__count{min-width:58px;font-size:.9rem}
+.float-badge{display:none}
+.services__grid{grid-template-columns:1fr}
+.rating-box{width:100%;padding:14px 18px}
+.rating-box strong{font-size:2.2rem}
+.price-row{flex-wrap:wrap;gap:4px 12px}
+.footer__box{padding:26px 20px}
+}

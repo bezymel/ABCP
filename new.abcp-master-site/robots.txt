@@ -1,0 +1,20 @@
+# robots.txt для https://abcp-master.ru
+User-agent: *
+Allow: /
+Allow: /assets/
+Disallow: /*?utm_
+Disallow: /*?yclid=
+Disallow: /*?gclid=
+Disallow: /*?fbclid=
+
+User-agent: Yandex
+Allow: /
+Allow: /assets/
+Disallow: /*?utm_
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content&yclid&gclid&fbclid&openstat /
+
+User-agent: Googlebot
+Allow: /
+Allow: /assets/
+
+Sitemap: https://abcp-master.ru/sitemap.xml
