@@ -29,8 +29,8 @@
 <meta name="twitter:title" content="Запуск сайтов автозапчастей на ABCP под ключ — ABCP-мастер">
 <meta name="twitter:description" content="30+ запущенных сайтов, 8 лет работы с ABCP. От настройки до продаж — один шаг!">
 <meta name="twitter:image" content="">
-<link rel="icon" href="/new.abcp-master-site/assets/img/favicon.ico" sizes="32x32">
-<link rel="icon" href="/new.abcp-master-site/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/img/favicon.ico" sizes="32x32">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
 <link rel="manifest" href="site.webmanifest">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
 <script>document.documentElement.classList.add('js')</script>
@@ -64,7 +64,7 @@
 <header class="header" id="header">
   <div class="header__inner">
     <a class="logo" href="#top" aria-label="ABCP-мастер — на главную">
-      <img class="logo__img" src="/new.abcp-master-site/assets/img/logo.png" alt="Логотип ABCP-мастер" width="650" height="100">
+      <img class="logo__img" src="/assets/img/logo.png" alt="Логотип ABCP-мастер" width="650" height="100">
     </a>
     <nav class="nav" id="nav" aria-label="Основная навигация">
       <a class="nav__link" href="#services">Услуги</a>
@@ -72,9 +72,36 @@
       <a class="nav__link" href="#reviews">Отзывы</a>
       <a class="nav__link" href="#pricing">Стоимость</a>
       <a class="nav__link" href="#contacts">Контакты</a>
-      <div class="nav__extra"><a class="nav__phone" href="tel:+79790346864">+7 (979) 034-68-64</a><a class="btn btn--primary" href="#contacts">Обсудить проект <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      <div class="nav__extra">
+        <div class="nav__contact">
+          <a class="nav__phone" href="tel:+79790346864">+7 (979) 034-68-64</a>
+          <div class="nav__messengers">
+            <a class="nav__msg" href="https://t.me/abcp_master" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram">
+              <img src="/assets/img/Telegram_logo.png" alt="" width="28" height="28">
+            </a>
+            <a class="nav__msg" href="https://max.ru/u/f9LHodD0cOK6wd01ns8-X4cTIKOqmujiqdiIHRcSEn7BIfCnenDw7IPGho8" target="_blank" rel="noopener noreferrer" aria-label="Написать в MAX">
+              <img src="/assets/img/max-logo.png" alt="" width="28" height="28">
+            </a>
+          </div>
+        </div>
+        <a class="btn btn--primary" href="#contacts">Обсудить проект <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
     </nav>
-    <a class="header__phone" href="tel:+79790346864">+7 (979) 034-68-64</a>
+    <div class="header__contact">
+      <a class="header__phone" href="tel:+79790346864" aria-haspopup="true">+7 (979) 034-68-64</a>
+      <div class="messengers">
+        <div class="messengers__box">
+          <a class="messengers__link" href="https://t.me/abcp_master" target="_blank" rel="noopener noreferrer">
+            <img class="messengers__icon" src="/assets/img/Telegram_logo.png" alt="" width="28" height="28">
+            <span>Telegram</span>
+          </a>
+          <a class="messengers__link" href="https://max.ru/u/f9LHodD0cOK6wd01ns8-X4cTIKOqmujiqdiIHRcSEn7BIfCnenDw7IPGho8" target="_blank" rel="noopener noreferrer">
+            <img class="messengers__icon" src="/assets/img/max-logo.png" alt="" width="28" height="28">
+            <span>MAX</span>
+          </a>
+        </div>
+      </div>
+    </div>
     <a class="btn btn--primary btn--sm header__cta" href="#contacts">Обсудить проект</a>
     <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
   </div>
@@ -102,8 +129,8 @@
     </div>
     <div class="card hero__visual" data-reveal="right" data-tilt="4">
       <div class="slider" data-slider aria-roledescription="carousel" aria-label="Примеры работ">
-        <figure class="media slider__slide is-active"><img src="" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — пример 1" width="720" height="560" fetchpriority="high"></figure>
-        <figure class="media slider__slide"><img src="" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — пример 2" width="720" height="560" loading="lazy"></figure>
+        <figure class="media slider__slide is-active"><img src="/assets/img/abcp.png" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — пример 1" width="720" height="560" fetchpriority="high"></figure>
+        <figure class="media slider__slide"><img src="/assets/img/abcp2.png" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — пример 2" width="720" height="560" loading="lazy"></figure>
         <div class="slider__controls">
           <button class="slider__btn" type="button" data-prev aria-label="Предыдущий слайд"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
           <span class="slider__count" aria-live="polite"><b data-current>01</b> / <span data-total>02</span></span>
@@ -119,7 +146,7 @@
 <section class="section" id="about" aria-labelledby="about-title">
   <div class="container">
     <div class="card card--glow about__card" data-reveal>
-      <figure class="media about__media"><img src="/new.abcp-master-site/assets/img/abcp.png" alt="Немцев Денис — специалист по запуску сайтов на ABCP" width="640" height="800" loading="lazy"></figure>
+      <figure class="media about__media"><img src="/assets/img/omne.png" alt="Немцев Денис — специалист по запуску сайтов на ABCP" width="640" height="800" loading="lazy"></figure>
       <div class="about__body">
         <span class="eyebrow">Обо мне</span>
         <h2 id="about-title">Понимаю ABCP и автобизнес запчастей изнутри</h2>
@@ -155,34 +182,34 @@
       <p>Представленные проекты выполнены комплексно: от структуры и дизайна до подключения поставщиков, настройки цен, каталога и оформления заказов. Ниже — несколько примеров с разными задачами и визуальными решениями.</p>
     </div>
 <div class="pslider" data-pslider data-reveal>
-  <div class="pslider__track" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Примеры проектов">
-    <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/VinDoc.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Vin Doc" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Vin Doc</h3><p>Комплексный запуск интернет-магазина на ABCP: разработана структура сайта, оформлены основные разделы, подключены поставщики и настроены правила ценообразования. Особое внимание уделено удобному поиску запчастей и корректной работе сайта на мобильных устройствах.</p></div></article>
-    <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/cityco-parts.ru.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Cityco Parts" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Cityco Parts</h3><p>Разработан интернет-магазин с индивидуальной визуальной подачей и полным набором инструментов ABCP. Настроены каталог, корзина, оформление заказа, способы оплаты и работа с предложениями поставщиков. Интерфейс адаптирован под фирменный стиль компании.</p></div></article>
-    <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/parts.bam-service.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Bam Auto" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Bam Auto</h3><p>Проведена комплексная настройка магазина: от дизайна и товарного каталога до подключения поставщиков и автоматизации расчёта цен. Структура страниц продумана так, чтобы покупателю было проще подобрать товар и оформить заказ с любого устройства.</p></div></article>
-    <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/PITSTOP.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Pit Stop" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Pit Stop</h3><p>Создан полнофункциональный интернет-магазин на ABCP с адаптивным дизайном и удобной навигацией. Настроены каталог, корзина, способы оплаты, поставщики и правила наценок. Проект подготовлен для полноценной работы с заказами и дальнейшего развития.</p></div></article>
-    <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/zapaska62.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Zapaska62" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Zapaska62</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
-    <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/Multizap.jpg" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Multizap" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Multizap</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
-    <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/drivemarket.jpg" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Драйв Маркет" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Драйв Маркет</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
-    <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/autoforum82.jpg" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект AutoForum82" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>AutoForum82</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
-    <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/88parts.jpg" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект 88parts" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>88parts</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
-    <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/auto-center.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Auto Center" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Auto Center</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
-    <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/autoshop82.jpg" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект AutoShop82" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>AutoShop82</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
-    <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/avto-partner.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Avto Partner" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Avto Partner</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
-    <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/avtoom.jpg" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Avtoom" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Avtoom</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
-    <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/BulatAuto.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Bulat Auto" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Bulat Auto</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
-    <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/caravanda.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Caravanda" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Caravanda</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
-    <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/DavAvto.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Dav Avto" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Dav Avto</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
-    <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/demrat.jpg" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Demrat" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Demrat</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
-    <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/expertdetal.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Expert Detal" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Expert Detal</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
-    <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/kulisa.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Kulisa" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Kulisa</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
-    <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/loftcar.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Loft Car" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Loft Car</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
-    <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/nicarstore.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Nicar Store" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Nicar Store</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
-    <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/paliyauto.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Paliy Auto" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Paliy Auto</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
-    <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/sakai.jpg" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Sakai" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Sakai</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
-    <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/start-market.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Start Market" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Start Market</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
-    <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/TamirTruck.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Tamir Truck" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Tamir Truck</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
-    <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/tavrida-oil.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Tavrida Oil" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Tavrida Oil</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
-  </div>
+<div class="pslider__track" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Примеры проектов">
+  <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/VinDoc.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Vin Doc" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3><a class="project__link" href="https://vindoc.ru/" target="_blank" rel="noopener noreferrer" draggable="false">Vin Doc</a></h3><p>Комплексный запуск интернет-магазина на ABCP: разработана структура сайта, оформлены основные разделы, подключены поставщики и настроены правила ценообразования. Особое внимание уделено удобному поиску запчастей и корректной работе сайта на мобильных устройствах.</p></div></article>
+  <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/cityco-parts.ru.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Cityco Parts" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3><a class="project__link" href="https://cityco-parts.ru/" target="_blank" rel="noopener noreferrer" draggable="false">Cityco Parts</a></h3><p>Разработан интернет-магазин с индивидуальной визуальной подачей и полным набором инструментов ABCP. Настроены каталог, корзина, оформление заказа, способы оплаты и работа с предложениями поставщиков. Интерфейс адаптирован под фирменный стиль компании.</p></div></article>
+  <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/parts.bam-service.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Bam Auto" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3><a class="project__link" href="https://parts.bam-service.ru/" target="_blank" rel="noopener noreferrer" draggable="false">Bam Auto</a></h3><p>Проведена комплексная настройка магазина: от дизайна и товарного каталога до подключения поставщиков и автоматизации расчёта цен. Структура страниц продумана так, чтобы покупателю было проще подобрать товар и оформить заказ с любого устройства.</p></div></article>
+  <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/PITSTOP.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Pit Stop" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3><a class="project__link" href="https://pit-stop.online/" target="_blank" rel="noopener noreferrer" draggable="false">Pit Stop</a></h3><p>Создан полнофункциональный интернет-магазин на ABCP с адаптивным дизайном и удобной навигацией. Настроены каталог, корзина, способы оплаты, поставщики и правила наценок. Проект подготовлен для полноценной работы с заказами и дальнейшего развития.</p></div></article>
+  <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/zapaska62.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Zapaska62" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3><a class="project__link" href="https://zapaska62.ru/" target="_blank" rel="noopener noreferrer" draggable="false">Zapaska62</a></h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
+  <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/Multizap.jpg" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Multizap" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3><a class="project__link" href="https://multizap.ru/" target="_blank" rel="noopener noreferrer" draggable="false">Multizap</a></h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
+  <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/drivemarket.jpg" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Драйв Маркет" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3><a class="project__link" href="https://xn--80aafgivjo6afy.online/" target="_blank" rel="noopener noreferrer" draggable="false">Драйв Маркет</a></h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
+  <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/autoforum82.jpg" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект AutoForum82" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3><a class="project__link" href="https://autoforum82.ru/" target="_blank" rel="noopener noreferrer" draggable="false">AutoForum82</a></h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
+  <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/88parts.jpg" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект 88parts" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3><a class="project__link" href="https://parts88.ru/" target="_blank" rel="noopener noreferrer" draggable="false">88parts</a></h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
+  <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/auto-center.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Auto Center" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3><a class="project__link" href="https://auto-center.site/" target="_blank" rel="noopener noreferrer" draggable="false">Auto Center</a></h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
+  <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/autoshop82.jpg" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект AutoShop82" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3><a class="project__link" href="https://autoshop82.ru/" target="_blank" rel="noopener noreferrer" draggable="false">AutoShop82</a></h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
+  <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/avto-partner.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Avto Partner" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3><a class="project__link" href="https://avto-partner.net/" target="_blank" rel="noopener noreferrer" draggable="false">Avto Partner</a></h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
+  <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/avtoom.jpg" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Avtoom" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3><a class="project__link" href="https://avtoom.ru/" target="_blank" rel="noopener noreferrer" draggable="false">Avtoom</a></h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
+  <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/BulatAuto.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Bulat Auto" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3><a class="project__link" href="https://bulatauto.ru/" target="_blank" rel="noopener noreferrer" draggable="false">Bulat Auto</a></h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
+  <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/caravanda.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Caravanda" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Caravanda</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
+  <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/DavAvto.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Dav Avto" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Dav Avto</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
+  <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/demrat.jpg" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Demrat" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3><a class="project__link" href="https://demrat82.ru/" target="_blank" rel="noopener noreferrer" draggable="false">Demrat</a></h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
+  <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/expertdetal.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Expert Detal" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Expert Detal</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
+  <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/kulisa.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Kulisa" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3><a class="project__link" href="https://kulisa.net/" target="_blank" rel="noopener noreferrer" draggable="false">Kulisa</a></h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
+  <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/loftcar.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Loft Car" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Loft Car</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
+  <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/nicarstore.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Nicar Store" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Nicar Store</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
+  <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/paliyauto.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Paliy Auto" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3><a class="project__link" href="https://paliy-auto.ru/" target="_blank" rel="noopener noreferrer" draggable="false">Paliy Auto</a></h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
+  <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/sakai.jpg" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Sakai" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Sakai</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
+  <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/start-market.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Start Market" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Start Market</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
+  <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/TamirTruck.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Tamir Truck" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3>Tamir Truck</h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
+  <article class="card card--lift project pslider__item"><figure class="media project__media"><img src="assets/img/client/tavrida-oil.png" draggable="false" alt="Запуск и сопровождение сайтов автозапчастей на ABCP — проект Tavrida Oil" width="800" height="500" loading="lazy"></figure><div class="project__body"><h3><a class="project__link" href="https://tavrida-oil.ru/" target="_blank" rel="noopener noreferrer" draggable="false">Tavrida Oil</a></h3><p>Интернет-магазин автозапчастей на ABCP: настроены каталог, поставщики, правила наценок и оформление заказов.</p></div></article>
+</div>
       <div class="pslider__bar">
         <div class="pslider__dots" aria-label="Страницы слайдера"></div>
         <div class="pslider__nav"><button class="slider__btn" type="button" data-prev aria-label="Назад"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button><div class="slider__count" aria-live="polite"><b data-current>01</b> / <span data-total>02</span></div><button class="slider__btn" type="button" data-next aria-label="Вперёд"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
@@ -193,10 +220,319 @@
         <h3>Магазины, которые я запускал и сопровождаю</h3>
         <div class="shops__nav"><button class="slider__btn" type="button" data-marquee-prev aria-label="Магазины: назад"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button><button class="slider__btn" type="button" data-marquee-next aria-label="Магазины: вперёд"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
       </div>
-      <div class="shops__rows">
-        <ul class="shops__row" data-marquee-row data-dir="left" aria-label="Магазины, часть 1"><li class="shop"><figure class="media shop__logo"><img src="" alt="Логотип магазина БАМ-АВТО" width="320" height="200" loading="lazy" draggable="false"></figure><div class="shop__body"><span class="shop__name">БАМ-АВТО</span><span class="shop__city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Город</span></span></div></li><li class="shop"><figure class="media shop__logo"><img src="" alt="Логотип магазина PIT-STOP" width="320" height="200" loading="lazy" draggable="false"></figure><div class="shop__body"><span class="shop__name">PIT-STOP</span><span class="shop__city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Город</span></span></div></li><li class="shop"><figure class="media shop__logo"><img src="" alt="Логотип магазина VINDOC" width="320" height="200" loading="lazy" draggable="false"></figure><div class="shop__body"><span class="shop__name">VINDOC</span><span class="shop__city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Город</span></span></div></li><li class="shop"><figure class="media shop__logo"><img src="" alt="Логотип магазина CITYCO PARTS" width="320" height="200" loading="lazy" draggable="false"></figure><div class="shop__body"><span class="shop__name">CITYCO PARTS</span><span class="shop__city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Город</span></span></div></li><li class="shop"><figure class="media shop__logo"><img src="" alt="Логотип магазина ZAPASKA62" width="320" height="200" loading="lazy" draggable="false"></figure><div class="shop__body"><span class="shop__name">ZAPASKA62</span><span class="shop__city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Город</span></span></div></li><li class="shop"><figure class="media shop__logo"><img src="" alt="Логотип магазина MULTIZAP" width="320" height="200" loading="lazy" draggable="false"></figure><div class="shop__body"><span class="shop__name">MULTIZAP</span><span class="shop__city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Город</span></span></div></li><li class="shop"><figure class="media shop__logo"><img src="" alt="Логотип магазина ДРАЙВ МАРКЕТ" width="320" height="200" loading="lazy" draggable="false"></figure><div class="shop__body"><span class="shop__name">ДРАЙВ МАРКЕТ</span><span class="shop__city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Город</span></span></div></li><li class="shop"><figure class="media shop__logo"><img src="" alt="Логотип магазина AUTOFORUM82" width="320" height="200" loading="lazy" draggable="false"></figure><div class="shop__body"><span class="shop__name">AUTOFORUM82</span><span class="shop__city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Город</span></span></div></li></ul>
-        <ul class="shops__row" data-marquee-row data-dir="right" aria-label="Магазины, часть 2"><li class="shop"><figure class="media shop__logo"><img src="" alt="Логотип магазина KULISA" width="320" height="200" loading="lazy" draggable="false"></figure><div class="shop__body"><span class="shop__name">KULISA</span><span class="shop__city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Город</span></span></div></li><li class="shop"><figure class="media shop__logo"><img src="" alt="Логотип магазина BULAT AUTO" width="320" height="200" loading="lazy" draggable="false"></figure><div class="shop__body"><span class="shop__name">BULAT AUTO</span><span class="shop__city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Город</span></span></div></li><li class="shop"><figure class="media shop__logo"><img src="" alt="Логотип магазина AUTO-CENTER" width="320" height="200" loading="lazy" draggable="false"></figure><div class="shop__body"><span class="shop__name">AUTO-CENTER</span><span class="shop__city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Город</span></span></div></li><li class="shop"><figure class="media shop__logo"><img src="" alt="Логотип магазина DEMRAT82" width="320" height="200" loading="lazy" draggable="false"></figure><div class="shop__body"><span class="shop__name">DEMRAT82</span><span class="shop__city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Город</span></span></div></li><li class="shop"><figure class="media shop__logo"><img src="" alt="Логотип магазина AVTO-PARTNER" width="320" height="200" loading="lazy" draggable="false"></figure><div class="shop__body"><span class="shop__name">AVTO-PARTNER</span><span class="shop__city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Город</span></span></div></li><li class="shop"><figure class="media shop__logo"><img src="" alt="Логотип магазина 88PARTS" width="320" height="200" loading="lazy" draggable="false"></figure><div class="shop__body"><span class="shop__name">88PARTS</span><span class="shop__city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Город</span></span></div></li><li class="shop"><figure class="media shop__logo"><img src="" alt="Логотип магазина AUTOSHOP82" width="320" height="200" loading="lazy" draggable="false"></figure><div class="shop__body"><span class="shop__name">AUTOSHOP82</span><span class="shop__city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Город</span></span></div></li><li class="shop"><figure class="media shop__logo"><img src="" alt="Логотип магазина АВТООМ" width="320" height="200" loading="lazy" draggable="false"></figure><div class="shop__body"><span class="shop__name">АВТООМ</span><span class="shop__city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Город</span></span></div></li><li class="shop"><figure class="media shop__logo"><img src="" alt="Логотип магазина PALIY-AUTO" width="320" height="200" loading="lazy" draggable="false"></figure><div class="shop__body"><span class="shop__name">PALIY-AUTO</span><span class="shop__city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Город</span></span></div></li></ul>
-      </div>
+<div class="shops__rows">
+  <ul class="shops__row" data-marquee-row data-dir="left" aria-label="Магазины, часть 1">
+    <li class="shop">
+      <a class="shop__link" href="https://parts.bam-service.ru/" target="_blank" rel="noopener noreferrer" draggable="false">
+        <figure class="media shop__logo">
+          <img src="/assets/img/client-logo/bamauto.png" alt="Логотип магазина БАМ-АВТО" width="320" height="200" loading="lazy" draggable="false">
+        </figure>
+        <div class="shop__body">
+          <span class="shop__name">БАМ-АВТО</span>
+          <span class="shop__city">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/>
+              <circle cx="12" cy="9.5" r="2.5"/>
+            </svg>
+            <span>Красноярск/Братск/Иркутск</span>
+          </span>
+        </div>
+      </a>
+    </li>
+    <li class="shop">
+      <a class="shop__link" href="https://pit-stop.online/" target="_blank" rel="noopener noreferrer" draggable="false">
+        <figure class="media shop__logo">
+          <img src="/assets/img/client-logo/pit-stop.png" alt="Логотип магазина PIT-STOP" width="320" height="200" loading="lazy" draggable="false">
+        </figure>
+        <div class="shop__body">
+          <span class="shop__name">PIT-STOP</span>
+          <span class="shop__city">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/>
+              <circle cx="12" cy="9.5" r="2.5"/>
+            </svg>
+            <span>Бахчисарай</span>
+          </span>
+        </div>
+      </a>
+    </li>
+    <li class="shop">
+      <a class="shop__link" href="https://vindoc.ru/" target="_blank" rel="noopener noreferrer" draggable="false">
+        <figure class="media shop__logo">
+          <img src="/assets/img/client-logo/vindoc.png" alt="Логотип магазина VINDOC" width="320" height="200" loading="lazy" draggable="false">
+        </figure>
+        <div class="shop__body">
+          <span class="shop__name">VINDOC</span>
+          <span class="shop__city">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/>
+              <circle cx="12" cy="9.5" r="2.5"/>
+            </svg>
+            <span>Москва</span>
+          </span>
+        </div>
+      </a>
+    </li>
+    <li class="shop">
+      <a class="shop__link" href="https://cityco-parts.ru/" target="_blank" rel="noopener noreferrer" draggable="false">
+        <figure class="media shop__logo">
+          <img src="/assets/img/client-logo/cityco-parts.png" alt="Логотип магазина CITYCO PARTS" width="320" height="200" loading="lazy" draggable="false">
+        </figure>
+        <div class="shop__body">
+          <span class="shop__name">CITYCO PARTS</span>
+          <span class="shop__city">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/>
+              <circle cx="12" cy="9.5" r="2.5"/>
+            </svg>
+            <span>Москва/Санкт-Петербург</span>
+          </span>
+        </div>
+      </a>
+    </li>
+    <li class="shop">
+      <a class="shop__link" href="https://zapaska62.ru/" target="_blank" rel="noopener noreferrer" draggable="false">
+        <figure class="media shop__logo">
+          <img src="/assets/img/client-logo/zapaska62.png" alt="Логотип магазина ZAPASKA62" width="320" height="200" loading="lazy" draggable="false">
+        </figure>
+        <div class="shop__body">
+          <span class="shop__name">ZAPASKA62</span>
+          <span class="shop__city">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/>
+              <circle cx="12" cy="9.5" r="2.5"/>
+            </svg>
+            <span>Шилово/Шацк</span>
+          </span>
+        </div>
+      </a>
+    </li>
+    <li class="shop">
+      <a class="shop__link" href="https://multizap.ru/" target="_blank" rel="noopener noreferrer" draggable="false">
+        <figure class="media shop__logo">
+          <img src="/assets/img/client-logo/multizap.png" alt="Логотип магазина MULTIZAP" width="320" height="200" loading="lazy" draggable="false">
+        </figure>
+        <div class="shop__body">
+          <span class="shop__name">MULTIZAP</span>
+          <span class="shop__city">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/>
+              <circle cx="12" cy="9.5" r="2.5"/>
+            </svg>
+            <span>Тольятти</span>
+          </span>
+        </div>
+      </a>
+    </li>
+    <li class="shop">
+      <a class="shop__link" href="https://xn--80aafgivjo6afy.online/" target="_blank" rel="noopener noreferrer" draggable="false">
+        <figure class="media shop__logo">
+          <img src="/assets/img/client-logo/drivemarket.png" alt="Логотип магазина ДРАЙВ МАРКЕТ" width="320" height="200" loading="lazy" draggable="false">
+        </figure>
+        <div class="shop__body">
+          <span class="shop__name">ДРАЙВ МАРКЕТ</span>
+          <span class="shop__city">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/>
+              <circle cx="12" cy="9.5" r="2.5"/>
+            </svg>
+            <span>Ессентуки</span>
+          </span>
+        </div>
+      </a>
+    </li>
+    <li class="shop">
+      <a class="shop__link" href="https://autoforum82.ru/" target="_blank" rel="noopener noreferrer" draggable="false">
+        <figure class="media shop__logo">
+          <img src="/assets/img/client-logo/autoforum82.png" alt="Логотип магазина AUTOFORUM82" width="320" height="200" loading="lazy" draggable="false">
+        </figure>
+        <div class="shop__body">
+          <span class="shop__name">AUTOFORUM82</span>
+          <span class="shop__city">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/>
+              <circle cx="12" cy="9.5" r="2.5"/>
+            </svg>
+            <span>Симферополь</span>
+          </span>
+        </div>
+      </a>
+    </li>
+  </ul>
+
+  <ul class="shops__row" data-marquee-row data-dir="right" aria-label="Магазины, часть 2">
+    <li class="shop">
+      <a class="shop__link" href="https://kulisa.net/" target="_blank" rel="noopener noreferrer" draggable="false">
+        <figure class="media shop__logo">
+          <img src="/assets/img/client-logo/kulisa.png" alt="Логотип магазина KULISA" width="320" height="200" loading="lazy" draggable="false">
+        </figure>
+        <div class="shop__body">
+          <span class="shop__name">KULISA</span>
+          <span class="shop__city">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/>
+              <circle cx="12" cy="9.5" r="2.5"/>
+            </svg>
+            <span>Бахчисарай</span>
+          </span>
+        </div>
+      </a>
+    </li>
+    <li class="shop">
+      <a class="shop__link" href="https://bulatauto.ru/" target="_blank" rel="noopener noreferrer" draggable="false">
+        <figure class="media shop__logo">
+          <img src="/assets/img/client-logo/bulatauto.png" alt="Логотип магазина BULAT AUTO" width="320" height="200" loading="lazy" draggable="false">
+        </figure>
+        <div class="shop__body">
+          <span class="shop__name">BULAT AUTO</span>
+          <span class="shop__city">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/>
+              <circle cx="12" cy="9.5" r="2.5"/>
+            </svg>
+            <span>Симферополь</span>
+          </span>
+        </div>
+      </a>
+    </li>
+    <li class="shop">
+      <a class="shop__link" href="https://auto-center.site/" target="_blank" rel="noopener noreferrer" draggable="false">
+        <figure class="media shop__logo">
+          <img src="/assets/img/client-logo/auto-center.png" alt="Логотип магазина AUTO-CENTER" width="320" height="200" loading="lazy" draggable="false">
+        </figure>
+        <div class="shop__body">
+          <span class="shop__name">AUTO-CENTER</span>
+          <span class="shop__city">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/>
+              <circle cx="12" cy="9.5" r="2.5"/>
+            </svg>
+            <span>Бахчисарай</span>
+          </span>
+        </div>
+      </a>
+    </li>
+    <li class="shop">
+      <a class="shop__link" href="https://demrat82.ru/" target="_blank" rel="noopener noreferrer" draggable="false">
+        <figure class="media shop__logo">
+          <img src="/assets/img/client-logo/demrat82.png" alt="Логотип магазина DEMRAT82" width="320" height="200" loading="lazy" draggable="false">
+        </figure>
+        <div class="shop__body">
+          <span class="shop__name">DEMRAT82</span>
+          <span class="shop__city">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/>
+              <circle cx="12" cy="9.5" r="2.5"/>
+            </svg>
+            <span>Нижнегорский</span>
+          </span>
+        </div>
+      </a>
+    </li>
+    <li class="shop">
+      <a class="shop__link" href="https://avto-partner.net/" target="_blank" rel="noopener noreferrer" draggable="false">
+        <figure class="media shop__logo">
+          <img src="/assets/img/client-logo/avtopartner.png" alt="Логотип магазина AVTO-PARTNER" width="320" height="200" loading="lazy" draggable="false">
+        </figure>
+        <div class="shop__body">
+          <span class="shop__name">AVTO-PARTNER</span>
+          <span class="shop__city">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/>
+              <circle cx="12" cy="9.5" r="2.5"/>
+            </svg>
+            <span>Евпатория</span>
+          </span>
+        </div>
+      </a>
+    </li>
+    <li class="shop">
+      <a class="shop__link" href="https://parts88.ru/" target="_blank" rel="noopener noreferrer" draggable="false">
+        <figure class="media shop__logo">
+          <img src="/assets/img/client-logo/88parts.png" alt="Логотип магазина 88PARTS" width="320" height="200" loading="lazy" draggable="false">
+        </figure>
+        <div class="shop__body">
+          <span class="shop__name">88PARTS</span>
+          <span class="shop__city">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/>
+              <circle cx="12" cy="9.5" r="2.5"/>
+            </svg>
+            <span>Донецк</span>
+          </span>
+        </div>
+      </a>
+    </li>
+    <li class="shop">
+      <a class="shop__link" href="https://autoshop82.ru/" target="_blank" rel="noopener noreferrer" draggable="false">
+        <figure class="media shop__logo">
+          <img src="/assets/img/client-logo/autoshop82.png" alt="Логотип магазина AUTOSHOP82" width="320" height="200" loading="lazy" draggable="false">
+        </figure>
+        <div class="shop__body">
+          <span class="shop__name">AUTOSHOP82</span>
+          <span class="shop__city">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/>
+              <circle cx="12" cy="9.5" r="2.5"/>
+            </svg>
+            <span>Симферополь</span>
+          </span>
+        </div>
+      </a>
+    </li>
+    <li class="shop">
+      <a class="shop__link" href="https://avtoom.ru/" target="_blank" rel="noopener noreferrer" draggable="false">
+        <figure class="media shop__logo">
+          <img src="/assets/img/client-logo/avtoom.png" alt="Логотип магазина АВТООМ" width="320" height="200" loading="lazy" draggable="false">
+        </figure>
+        <div class="shop__body">
+          <span class="shop__name">АВТООМ</span>
+          <span class="shop__city">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/>
+              <circle cx="12" cy="9.5" r="2.5"/>
+            </svg>
+            <span>Краснодар</span>
+          </span>
+        </div>
+      </a>
+    </li>
+    <li class="shop">
+      <a class="shop__link" href="https://paliy-auto.ru/" target="_blank" rel="noopener noreferrer" draggable="false">
+        <figure class="media shop__logo">
+          <img src="/assets/img/client-logo/paliy-auto.png" alt="Логотип магазина PALIY-AUTO" width="320" height="200" loading="lazy" draggable="false">
+        </figure>
+        <div class="shop__body">
+          <span class="shop__name">PALIY-AUTO</span>
+          <span class="shop__city">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/>
+              <circle cx="12" cy="9.5" r="2.5"/>
+            </svg>
+            <span>Симферополь</span>
+          </span>
+        </div>
+      </a>
+    </li>
+    <li class="shop">
+      <a class="shop__link" href="https://tavrida-oil.ru/" target="_blank" rel="noopener noreferrer" draggable="false">
+        <figure class="media shop__logo">
+          <img src="/assets/img/client-logo/tavrida-oil.png" alt="Логотип магазина TAVRIDA-OIL" width="320" height="200" loading="lazy" draggable="false">
+        </figure>
+        <div class="shop__body">
+          <span class="shop__name">TAVRIDA-OIL</span>
+          <span class="shop__city">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/>
+              <circle cx="12" cy="9.5" r="2.5"/>
+            </svg>
+            <span>Симферополь</span>
+          </span>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
     </div>
   </div>
 </section>
@@ -208,16 +544,16 @@
       <div class="rating-box"><strong>5.0</strong><div><span class="stars" aria-hidden="true">★★★★★</span><small>10 отзывов, средняя оценка</small></div></div>
     </div>
     <div class="reviews__grid" data-stagger>
-      <article class="card card--glow review"><div class="review__head"><span class="review__avatar media" data-initial="М"><img src="" alt="Фото: Мария Катаева" width="54" height="54" loading="lazy"></span><div><div class="review__name">Мария Катаева</div><div class="review__meta"><span class="stars" aria-label="Оценка 5 из 5">★★★★★</span><span>5.0</span><time>6 октября 2025</time></div></div></div><p>Работа проделана на все 100%, быстро и качественно. Заказывала сайт на базе платформы abcp. Все ожидания оправдались, все пожелания были учтены! Сайт получился функциональный, продающий и стильный 👍 Изначально озвученная цена за работу не поменялась по итогу её выполнения. Рекомендую!</p></article>
-      <article class="card card--glow review"><div class="review__head"><span class="review__avatar media" data-initial="М"><img src="" alt="Фото: Меметов Ремзи Нуриевич" width="54" height="54" loading="lazy"></span><div><div class="review__name">Меметов Ремзи Нуриевич</div><div class="review__meta"><span class="stars" aria-label="Оценка 5 из 5">★★★★★</span><span>5.0</span><time>5 ноября 2025</time></div></div></div><p>Исполнитель профессионал своего дела. Созвонились, проговорили все детали и в течении недели все было реализовано. Рад буду и в дальнейшем взаимодействовать. Проделанной работой остался очень доволен, приятно работать с такими ответственными людьми.🤝 Исполнителя однозначно рекомендую!</p></article>
-      <article class="card card--glow review"><div class="review__head"><span class="review__avatar media" data-initial="Х"><img src="" alt="Фото: Хлыстов Матвей" width="54" height="54" loading="lazy"></span><div><div class="review__name">Хлыстов Матвей</div><div class="review__meta"><span class="stars" aria-label="Оценка 5 из 5">★★★★★</span><span>5.0</span><time>9 мая 2026</time></div></div></div><p>Отличный человек как исполнитель и разработчик. С платформой ABCP знаком очень хорошо, общается напрямую с разработчиками. Результатом работы доволен.</p></article>
-      <article class="card card--glow review"><div class="review__head"><span class="review__avatar media" data-initial="A"><img src="" alt="Фото: Asan Bulatov" width="54" height="54" loading="lazy"></span><div><div class="review__name">Asan Bulatov</div><div class="review__meta"><span class="stars" aria-label="Оценка 5 из 5">★★★★★</span><span>5.0</span><time>21 января 2026</time></div></div></div><p>Денис специалист в своей работе. Работа выполнена очень быстро и в полном объёме, был на связи чуть ли не 24 часа в сутки, в любом случае буду обращаться ещё по мере надобности.</p></article>
-      <article class="card card--glow review"><div class="review__head"><span class="review__avatar media" data-initial="C"><img src="" alt="Фото: Caravanda" width="54" height="54" loading="lazy"></span><div><div class="review__name">Caravanda</div><div class="review__meta"><span class="stars" aria-label="Оценка 5 из 5">★★★★★</span><span>5.0</span><time>21 января 2026</time></div></div></div><p>Человек понимает что и как работает, консультирует и помогает с выбором. Быстро, чётко! Однозначно рекомендуем! Денису огромное спасибо за работу!</p></article>
-      <article class="card card--glow review"><div class="review__head"><span class="review__avatar media" data-initial="А"><img src="" alt="Фото: АВТО ФОРУМ" width="54" height="54" loading="lazy"></span><div><div class="review__name">АВТО ФОРУМ</div><div class="review__meta"><span class="stars" aria-label="Оценка 5 из 5">★★★★★</span><span>5.0</span><time>21 января 2026</time></div></div></div><p>Денис молодчага! Как специалист, знает свое дело., все быстро, четко и по факту!</p></article>
-      <article class="card card--glow review"><div class="review__head"><span class="review__avatar media" data-initial="М"><img src="" alt="Фото: Максим Леонидович" width="54" height="54" loading="lazy"></span><div><div class="review__name">Максим Леонидович</div><div class="review__meta"><span class="stars" aria-label="Оценка 5 из 5">★★★★★</span><span>5.0</span><time>21 января 2026</time></div></div></div><p>Отличный исполнитель, все четко по срокам и по делу. Спасибо за проделанную работу.</p></article>
-      <article class="card card--glow review"><div class="review__head"><span class="review__avatar media" data-initial="Ж"><img src="" alt="Фото: Жадан Александр Анатольевич" width="54" height="54" loading="lazy"></span><div><div class="review__name">Жадан Александр Анатольевич</div><div class="review__meta"><span class="stars" aria-label="Оценка 5 из 5">★★★★★</span><span>5.0</span><time>13 июля 2026</time></div></div></div><p>Очень редко пишу отзывы, не люблю и времени на это нет. Но в этом случае не могу не написать. Искал кто поможет в оформлении моего сайта на платформе ABCP и нашёл. Честно скажу, такого результата я сам не ожидал. Всё было сделано в срок по оговоренным ценам, а самое главное, профессионально, даже придраться не к чему. Любой мой вопрос решался мгновенно и с большим результатом чем я мог ожидать. Сразу видно, что человек любит свою работу и отвечает за неё. Ещё раз ОГРОМНОЕ СПАСИБО!!! Надеюсь на дальнейшее сотрудничество.</p></article>
-      <article class="card card--glow review"><div class="review__head"><span class="review__avatar media" data-initial="П"><img src="" alt="Фото: Продажа воздушных отопителей (Фёдор)" width="54" height="54" loading="lazy"></span><div><div class="review__name">Продажа воздушных отопителей (Фёдор)</div><div class="review__meta"><span class="stars" aria-label="Оценка 5 из 5">★★★★★</span><span>5.0</span><time>4 октября 2026</time></div></div></div><p>Обратился к Денису по созданию сайта на abcp. Все отлично, понятно и хорошо сделано. Можете смело обращаться и работать. Быстро все будет сделано.</p></article>
-      <article class="card card--glow review"><div class="review__head"><span class="review__avatar media" data-initial="Ч"><img src="" alt="Фото: частник" width="54" height="54" loading="lazy"></span><div><div class="review__name">частник</div><div class="review__meta"><span class="stars" aria-label="Оценка 5 из 5">★★★★★</span><span>5.0</span><time>4 октября 2026</time></div></div></div><p>Денис отличный помощник, организовал все этапы работы, помог с настройками в кратчайшие сроки. Рекомендую как хорошего специалиста!</p></article>
+      <article class="card card--glow review"><div class="review__head"><span class="review__avatar media" data-initial="М"><img src="/assets/img/review/sakai.png" alt="Фото: Мария Катаева" width="54" height="54" loading="lazy"></span><div><div class="review__name">Мария Катаева</div><div class="review__meta"><span class="stars" aria-label="Оценка 5 из 5">★★★★★</span><span>5.0</span><time>6 октября 2025</time></div></div></div><p>Работа проделана на все 100%, быстро и качественно. Заказывала сайт на базе платформы abcp. Все ожидания оправдались, все пожелания были учтены! Сайт получился функциональный, продающий и стильный 👍 Изначально озвученная цена за работу не поменялась по итогу её выполнения. Рекомендую!</p></article>
+      <article class="card card--glow review"><div class="review__head"><span class="review__avatar media" data-initial="М"><img src="/assets/img/review/autoshop82.png" alt="Фото: Меметов Ремзи Нуриевич" width="54" height="54" loading="lazy"></span><div><div class="review__name">Меметов Ремзи Нуриевич</div><div class="review__meta"><span class="stars" aria-label="Оценка 5 из 5">★★★★★</span><span>5.0</span><time>5 ноября 2025</time></div></div></div><p>Исполнитель профессионал своего дела. Созвонились, проговорили все детали и в течении недели все было реализовано. Рад буду и в дальнейшем взаимодействовать. Проделанной работой остался очень доволен, приятно работать с такими ответственными людьми.🤝 Исполнителя однозначно рекомендую!</p></article>
+      <article class="card card--glow review"><div class="review__head"><span class="review__avatar media" data-initial="Х"><img src="/assets/img/review/zapaska62.png" alt="Фото: Хлыстов Матвей" width="54" height="54" loading="lazy"></span><div><div class="review__name">Хлыстов Матвей</div><div class="review__meta"><span class="stars" aria-label="Оценка 5 из 5">★★★★★</span><span>5.0</span><time>9 мая 2026</time></div></div></div><p>Отличный человек как исполнитель и разработчик. С платформой ABCP знаком очень хорошо, общается напрямую с разработчиками. Результатом работы доволен.</p></article>
+      <article class="card card--glow review"><div class="review__head"><span class="review__avatar media" data-initial="A"><img src="/assets/img/review/bulatauto.png" alt="Фото: Asan Bulatov" width="54" height="54" loading="lazy"></span><div><div class="review__name">Asan Bulatov</div><div class="review__meta"><span class="stars" aria-label="Оценка 5 из 5">★★★★★</span><span>5.0</span><time>21 января 2026</time></div></div></div><p>Денис специалист в своей работе. Работа выполнена очень быстро и в полном объёме, был на связи чуть ли не 24 часа в сутки, в любом случае буду обращаться ещё по мере надобности.</p></article>
+      <article class="card card--glow review"><div class="review__head"><span class="review__avatar media" data-initial="C"><img src="/assets/img/review/caravanda.png" alt="Фото: Caravanda" width="54" height="54" loading="lazy"></span><div><div class="review__name">Caravanda</div><div class="review__meta"><span class="stars" aria-label="Оценка 5 из 5">★★★★★</span><span>5.0</span><time>21 января 2026</time></div></div></div><p>Человек понимает что и как работает, консультирует и помогает с выбором. Быстро, чётко! Однозначно рекомендуем! Денису огромное спасибо за работу!</p></article>
+      <article class="card card--glow review"><div class="review__head"><span class="review__avatar media" data-initial="А"><img src="/assets/img/review/autoforum82.png" alt="Фото: АВТО ФОРУМ" width="54" height="54" loading="lazy"></span><div><div class="review__name">АВТО ФОРУМ</div><div class="review__meta"><span class="stars" aria-label="Оценка 5 из 5">★★★★★</span><span>5.0</span><time>21 января 2026</time></div></div></div><p>Денис молодчага! Как специалист, знает свое дело., все быстро, четко и по факту!</p></article>
+      <article class="card card--glow review"><div class="review__head"><span class="review__avatar media" data-initial="М"><img src="/assets/img/review/88parts.png" alt="Фото: Максим Леонидович" width="54" height="54" loading="lazy"></span><div><div class="review__name">Максим Леонидович</div><div class="review__meta"><span class="stars" aria-label="Оценка 5 из 5">★★★★★</span><span>5.0</span><time>21 января 2026</time></div></div></div><p>Отличный исполнитель, все четко по срокам и по делу. Спасибо за проделанную работу.</p></article>
+      <article class="card card--glow review"><div class="review__head"><span class="review__avatar media" data-initial="Ж"><img src="/assets/img/review/drivemarket.png" alt="Фото: Жадан Александр Анатольевич" width="54" height="54" loading="lazy"></span><div><div class="review__name">Жадан Александр Анатольевич</div><div class="review__meta"><span class="stars" aria-label="Оценка 5 из 5">★★★★★</span><span>5.0</span><time>13 июля 2026</time></div></div></div><p>Очень редко пишу отзывы, не люблю и времени на это нет. Но в этом случае не могу не написать. Искал кто поможет в оформлении моего сайта на платформе ABCP и нашёл. Честно скажу, такого результата я сам не ожидал. Всё было сделано в срок по оговоренным ценам, а самое главное, профессионально, даже придраться не к чему. Любой мой вопрос решался мгновенно и с большим результатом чем я мог ожидать. Сразу видно, что человек любит свою работу и отвечает за неё. Ещё раз ОГРОМНОЕ СПАСИБО!!! Надеюсь на дальнейшее сотрудничество.</p></article>
+      <article class="card card--glow review"><div class="review__head"><span class="review__avatar media" data-initial="П"><img src="/assets/img/review/expertdetal.png" alt="Фото: Продажа воздушных отопителей (Фёдор)" width="54" height="54" loading="lazy"></span><div><div class="review__name">Продажа воздушных отопителей (Фёдор)</div><div class="review__meta"><span class="stars" aria-label="Оценка 5 из 5">★★★★★</span><span>5.0</span><time>4 октября 2026</time></div></div></div><p>Обратился к Денису по созданию сайта на abcp. Все отлично, понятно и хорошо сделано. Можете смело обращаться и работать. Быстро все будет сделано.</p></article>
+      <article class="card card--glow review"><div class="review__head"><span class="review__avatar media" data-initial="Ч"><img src="/assets/img/review/davavto29.png" alt="Фото: частник" width="54" height="54" loading="lazy"></span><div><div class="review__name">частник</div><div class="review__meta"><span class="stars" aria-label="Оценка 5 из 5">★★★★★</span><span>5.0</span><time>4 октября 2026</time></div></div></div><p>Денис отличный помощник, организовал все этапы работы, помог с настройками в кратчайшие сроки. Рекомендую как хорошего специалиста!</p></article>
     </div>
   </div>
 </section>
@@ -245,7 +581,7 @@
         <li class="price-row"><span class="price-row__name">Создание простого логотипа</span><span class="price-row__dots"></span><span class="price-row__val">от 1 500 ₽</span></li>
         <li class="price-row"><span class="price-row__name">Сопровождение сайта</span><span class="price-row__dots"></span><span class="price-row__val">от 10 000 ₽ в месяц</span></li>
         <li class="price-row"><span class="price-row__name">Наполнение сайта</span><span class="price-row__dots"></span><span class="price-row__val">от 5 000 ₽</span></li>
-        <li class="price-row"><span class="price-row__name">Расширенная техническая поддержка</span><span class="price-row__dots"></span><span class="price-row__val">от 25 000 ₽ в месяц</span></li>
+        <li class="price-row"><span class="price-row__name">Расширенная техническая поддержка</span><span class="price-row__dots"></span><span class="price-row__val">от 15 000 ₽ в месяц</span></li>
         <li class="price-row"><span class="price-row__name">Редизайн сайта</span><span class="price-row__dots"></span><span class="price-row__val">от 10 000 ₽</span></li>
         <li class="price-row"><span class="price-row__name">Выгрузка на маркетплейсы</span><span class="price-row__dots"></span><span class="price-row__val">от 8 000 ₽</span></li>
         <li class="price-row"><span class="price-row__name">Подключение поставщика</span><span class="price-row__dots"></span><span class="price-row__val">от 5 000 ₽</span></li>
@@ -260,7 +596,7 @@
       <div class="contacts__info" data-reveal="left">
         <div class="section__head"><span class="eyebrow">Контакты</span><h2 id="contacts-title">Работаю удалённо по всей России</h2></div>
         <p>Провожу консультации, настраиваю сайты и оказываю техническую поддержку полностью дистанционно. Для обсуждения проекта можно связаться со мной по телефону, в мессенджере или по электронной почте.</p>
-        <figure class="media contacts__media"><img src="/new.abcp-master-site/assets/img/geo.png" alt="Работа удалённо по всей России — ABCP-мастер" width="900" height="450" loading="lazy"></figure>
+        <figure class="media contacts__media"><img src="/assets/img/geo.png" alt="Работа удалённо по всей России — ABCP-мастер" width="900" height="450" loading="lazy"></figure>
         <div class="info-grid" data-stagger>
           <div class="info-tile"><span class="info-tile__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><h3>География работы</h3><p>Удалённо по всей России</p><p>Место регистрации: г. Бахчисарай</p></div>
           <div class="info-tile"><span class="info-tile__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><h3>Время работы</h3><p>Пн–Пт: 09:00–20:00<br>Сб–Вс: 10:00–18:00</p><p>Время московское</p></div>
@@ -302,17 +638,71 @@
       <div class="footer__grid">
         <div>
           <a class="logo" href="#top" aria-label="ABCP-мастер — на главную">
-            <img class="logo__img" src="/new.abcp-master-site/assets/img/logo1.png" alt="Логотип ABCP-мастер" width="650" height="100">
+            <img class="logo__img" src="/assets/img/logo1.png" alt="Логотип ABCP-мастер" width="650" height="100">
           </a>
           <p class="footer__about">Запуск и сопровождение интернет-магазинов автозапчастей на ABCP.</p>
         </div>
-        <nav aria-label="Навигация в подвале"><h4>Разделы</h4><ul><li><a href="#services">Услуги</a></li><li><a href="#projects">Проекты</a></li><li><a href="#reviews">Отзывы</a></li><li><a href="#pricing">Стоимость</a></li><li><a href="#contacts">Контакты</a></li></ul></nav>
-        <div><h4>Документы и связь</h4><ul><li><a href="#">Telegram</a></li><li><a href="#">MAX</a></li><li><a href="#">Группа Вконтакте</a></li><li><a href="#">Оферта</a></li><li><a href="#">Политика конфиденциальности</a></li><li><a href="#">Согласие на обработку персональных данных</a></li></ul></div>
-        <div><h4>Контакты</h4><ul><li><a class="footer__phone" href="tel:+79790346864">+7 (979) 034-68-64</a></li><li><a href="mailto:abcp-master@ya.ru">abcp-master@ya.ru</a></li><li>Пн-Пт: 9:00-20:00<br>Сб-Вс: 10:00-18:00</li></ul></div>
+
+        <nav aria-label="Навигация в подвале">
+          <h4>Разделы</h4>
+          <ul>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#pricing">Стоимость</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h4>Документы</h4>
+          <ul>
+            <li><a href="#">Оферта</a></li>
+            <li><a href="#">Политика конфиденциальности</a></li>
+            <li><a href="#">Согласие на обработку персональных данных</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Партнеры</h4>
+          <ul>
+            <li><a href="https://www.abcp.ru/" target="_blank" rel="noopener noreferrer">ABCP</a></li>
+            <li><a href="https://1c-abcp.ru/" target="_blank" rel="noopener noreferrer">Интеграции ABCP-1С</a></li>
+            <li><a href="https://vin-scan.ru/" target="_blank" rel="noopener noreferrer">VIN-SCAN - Чат-бот подбора запчастей</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Контакты</h4>
+          <ul>
+            <li><a class="footer__phone" href="tel:+79790346864">+7 (979) 034-68-64</a></li>
+            <li class="footer__social-item">
+              <div class="footer__social">
+                <a class="footer__social-link" href="https://t.me/abcp_master" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                  <img src="/assets/img/Telegram_logo.png" alt="Telegram" width="24" height="24">
+                </a>
+                <a class="footer__social-link" href="https://max.ru/u/f9LHodD0cOK6wd01ns8-X4cTIKOqmujiqdiIHRcSEn7BIfCnenDw7IPGho8" target="_blank" rel="noopener noreferrer" aria-label="MAX">
+                  <img src="/assets/img/max-logo.png" alt="MAX" width="24" height="24">
+                </a>
+                <a class="footer__social-link" href="https://vk.ru/bezumel_abcp" target="_blank" rel="noopener noreferrer" aria-label="ВКонтакте">
+                  <img src="/assets/img/vk-logo.png" alt="ВКонтакте" width="24" height="24">
+                </a>
+              </div>
+            </li>
+            <li><a href="mailto:abcp-master@ya.ru">abcp-master@ya.ru</a></li>
+            <li>Пн-Пт: 9:00-20:00<br>Сб-Вс: 10:00-18:00</li>
+          </ul>
+        </div>
       </div>
+
       <div class="footer__bottom">
         <div class="footer__req"><strong>Реквизиты</strong><br>ИП Немцев Денис Сергеевич<br>ИНН: 910408824929 · ОГРНИП: 326910000028864<br>© 2026 ABCP-мастер</div>
-        <a class="to-top" href="#top" aria-label="Наверх"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
+        <a class="to-top" href="#top" aria-label="Наверх">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 20V4M5 11l7-7 7 7"/>
+          </svg>
+        </a>
       </div>
     </div>
   </div>
@@ -330,5 +720,6 @@
 <script src="assets/js/modules/progress.js" defer></script>
 <script src="assets/js/modules/form.js" defer></script>
 <script src="assets/js/main.js" defer></script>
+<script src="assets/js/modules/to-top.js" defer></script>
 </body>
 </html>

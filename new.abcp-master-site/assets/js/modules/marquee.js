@@ -40,14 +40,35 @@
       }
       st.forEach(function (s) {
         var r = s.row;
-        r.addEventListener('pointerdown', function (e) {
-          if (e.pointerType !== 'mouse' || e.button !== 0) return;
-          s.drag = { x: e.clientX, sl: r.scrollLeft }; r.classList.add('is-dragging');
-          try { r.setPointerCapture(e.pointerId); } catch (x) {}
-        });
-        r.addEventListener('pointermove', function (e) { if (s.drag) r.scrollLeft = s.drag.sl - (e.clientX - s.drag.x); });
-        function up() { if (!s.drag) return; s.drag = null; r.classList.remove('is-dragging'); pause(1500); }
-        r.addEventListener('pointerup', up); r.addEventListener('pointercancel', up);
+r.addEventListener('pointerdown', function (e) {
+  if (e.pointerType !== 'mouse' || e.button !== 0) return;
+  s.dragged = false;
+  // захват пока не включаем, иначе клик по ссылке не дойдёт до <a>
+  s.drag = { x: e.clientX, sl: r.scrollLeft, id: e.pointerId, moved: false };
+});
+r.addEventListener('pointermove', function (e) {
+  if (!s.drag) return;
+  var dx = e.clientX - s.drag.x;
+  if (!s.drag.moved) {
+    if (Math.abs(dx) < 6) return;          // порог: меньше 6px считаем кликом
+    s.drag.moved = true;
+    r.classList.add('is-dragging');
+    try { r.setPointerCapture(s.drag.id); } catch (x) {}
+  }
+  r.scrollLeft = s.drag.sl - dx;
+});
+function up() {
+  if (!s.drag) return;
+  s.dragged = s.drag.moved;                 // запоминаем, было ли настоящее перетаскивание
+  s.drag = null;
+  r.classList.remove('is-dragging');
+  pause(1500);
+}
+r.addEventListener('pointerup', up); r.addEventListener('pointercancel', up);
+// после перетаскивания гасим случайный клик по ссылке, обычный клик проходит
+r.addEventListener('click', function (e) {
+  if (s.dragged) { e.preventDefault(); e.stopPropagation(); s.dragged = false; }
+}, true);
         r.addEventListener('dragstart', function (e) { e.preventDefault(); });
         r.addEventListener('touchstart', function () { until = Infinity; }, { passive: true });
         function tend() { until = now() + 2500; }

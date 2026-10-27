@@ -1,6 +1,20 @@
-.header{position:fixed;top:14px;left:0;right:0;z-index:100}
-.header__inner{position:relative;width:calc(100% - 2*var(--gutter));margin-inline:auto;height:var(--header-h);padding:0 14px 0 24px;display:flex;align-items:center;gap:18px;background:rgba(255,255,255,.84);backdrop-filter:blur(18px) saturate(160%);-webkit-backdrop-filter:blur(18px) saturate(160%);border-radius:999px;border:1px solid rgba(255,255,255,.9);box-shadow:0 8px 30px rgba(39,41,43,.08);transition:height .35s var(--ease),box-shadow .35s,background .35s}
-.header.is-scrolled .header__inner{height:calc(var(--header-h) - 12px);background:rgba(255,255,255,.96);box-shadow:var(--shadow-md)}
+.header{position:fixed;top:14px;left:0;right:0;z-index:100;transition:top .35s var(--ease)}
+.header__inner{position:relative;width:calc(100% - 2*var(--gutter));margin-inline:auto;height:var(--header-h);padding:0 14px 0 24px;display:flex;align-items:center;gap:18px;background:rgba(255,255,255,.84);backdrop-filter:blur(18px) saturate(160%);-webkit-backdrop-filter:blur(18px) saturate(160%);border-radius:60px;border:1px solid rgba(39,41,43,.06);box-shadow:0 8px 30px rgba(39,41,43,.14),0 2px 6px rgba(39,41,43,.08);transition:height .35s var(--ease),box-shadow .35s,background .35s,border-radius .35s var(--ease)}
+.header.is-scrolled .header__inner{height:calc(var(--header-h) - 12px);background:rgba(255,255,255,.96);box-shadow:0 6px 24px rgba(39,41,43,.16),0 1px 4px rgba(39,41,43,.08)}
+/* Прилипание к верху при прокрутке */
+.header.is-scrolled{top:0}
+.header.is-scrolled .header__inner{border-radius:0 0 28px 28px;border-top-color:transparent}
+
+/* Телефон + окошко с мессенджерами */
+.header__contact{position:relative;flex:none}
+.messengers{position:absolute;top:100%;left:50%;padding-top:14px;transform:translate(-50%,8px);opacity:0;visibility:hidden;transition:opacity .25s,transform .3s var(--ease),visibility .25s;z-index:5}
+.header__contact:hover .messengers,
+.header__contact:focus-within .messengers{opacity:1;visibility:visible;transform:translate(-50%,0)}
+.messengers__box{display:flex;flex-direction:column;gap:4px;min-width:200px;padding:10px;background:#fff;border-radius:var(--radius-lg);box-shadow:var(--shadow-lg)}
+.messengers__link{display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:14px;font-weight:600;font-size:1.05rem;transition:background .25s,color .25s}
+.messengers__link:hover,
+.messengers__link:focus-visible{background:var(--primary-50);color:var(--primary)}
+.messengers__icon{display:block;width:28px;height:28px;object-fit:contain;flex:none}
 .logo{display:flex;align-items:center;flex:none;line-height:0}
 .logo__img{display:block;height:70px;width:auto;max-width:none;object-fit:contain;transition:transform .35s var(--ease)}
 .logo:hover .logo__img{transform:scale(1.04)}
@@ -24,17 +38,37 @@
 .burger.is-open span:nth-child(1){top:23px;transform:rotate(45deg)}
 .burger.is-open span:nth-child(2){opacity:0}
 .burger.is-open span:nth-child(3){top:23px;transform:rotate(-45deg)}
-@media(max-width:1520px){.header__phone{display:none}}
-@media(max-width:1240px){.nav__link{padding:12px 16px;font-size:1.05rem}.header__cta{padding:15px 22px}}
+@media(max-width:1520px){
+.header__inner{gap:14px}
+.logo__img{height:58px}
+.header__phone{font-size:1.05rem}
+}
+@media(max-width:1360px){
+.header__cta{display:none}
+}
+@media(max-width:1240px){
+.logo__img{height:50px}
+.nav__link{padding:10px 12px;font-size:1rem}
+.header__phone{font-size:1rem}
+}
 @media(max-width:1060px){
 .burger{display:block}
 .header__cta{margin-left:auto}
+.header__contact{display:none}   /* телефон и мессенджеры теперь в бургер-меню */
+.header__cta{display:inline-flex} /* вернуть кнопку, скрытую на 1360px */
 .nav{position:absolute;top:calc(100% + 10px);left:0;right:0;margin:0;flex-direction:column;justify-content:flex-start;gap:4px;background:#fff;border-radius:var(--radius-lg);padding:14px;box-shadow:var(--shadow-lg);max-height:calc(100vh - var(--header-h) - 40px);overflow-y:auto;opacity:0;visibility:hidden;transform:translateY(-12px) scale(.98);transform-origin:top;transition:opacity .35s,transform .45s var(--ease),visibility .35s}
 .nav.is-open{opacity:1;visibility:visible;transform:none}
 .nav__link{padding:16px 22px;font-size:1.15rem}
 .nav__extra{display:flex;flex-direction:column;gap:12px;margin-top:8px;padding:16px 8px 6px;border-top:1px solid var(--line)}
 .nav__phone{font-weight:800;font-size:1.2rem;padding:4px 14px}
 .nav__extra .btn{display:none}
+.nav__contact{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.nav__messengers{display:flex;align-items:center;gap:10px}
+.nav__msg{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--primary-50);transition:background .25s,transform .25s}
+.nav__msg:hover,
+.nav__msg:focus-visible{background:#dbeaf3;transform:translateY(-2px)}
+.nav__msg img{display:block;width:28px;height:28px;object-fit:contain}
+
 }
 @media(max-width:640px){
 .header{top:10px}

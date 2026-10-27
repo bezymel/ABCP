@@ -16,4 +16,15 @@
 .shop__name{font-weight:800;font-size:1.08rem;line-height:1.25}
 .shop__city{display:inline-flex;align-items:center;gap:6px;color:var(--muted);font-size:.98rem}
 .shop__city svg{width:17px;height:17px;flex:none;color:var(--primary)}
+.shop__link {
+  display: block;        /* если у .shop раньше был flex/grid — продублируйте эти свойства сюда */
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+.shop__link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
 @media(max-width:480px){.shop{width:72vw}.shops__nav .slider__btn{width:42px;height:42px}}
