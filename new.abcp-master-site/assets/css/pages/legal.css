@@ -1,0 +1,22 @@
+.legal-page{margin:0;min-height:100vh;padding:clamp(12px,3vw,40px) clamp(10px,3vw,24px);background:#eef5f9;color:#1c2b36}
+.legal{position:relative;z-index:1;max-width:980px;margin:0 auto;padding:clamp(22px,5vw,56px);background:#fff;border:1px solid rgba(7,104,154,.12);border-radius:32px;box-shadow:0 24px 70px rgba(7,104,154,.14)}
+.legal__back{margin-bottom:24px}
+.legal h1{font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.2;margin:0 0 8px;color:#07689a}
+.legal__meta{color:#5d7280;margin:0 0 32px}
+.legal h2{font-size:clamp(1.15rem,2.4vw,1.45rem);line-height:1.3;margin:36px 0 14px;color:#0b2e44}
+.legal p,.legal li{font-size:1rem;line-height:1.7}
+.legal p{margin:0 0 12px}
+.legal ul,.legal ol{margin:0 0 12px;padding-left:1.4em}
+.legal ul{list-style:disc}
+.legal ol{list-style:decimal}
+.legal li{margin-bottom:8px}
+.legal a:not(.btn){color:#07689a;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.legal a:not(.btn):hover{color:#0b2e44}
+.legal__table{overflow-x:auto;margin:0 0 16px;border:1px solid rgba(7,104,154,.15);border-radius:20px}
+.legal table{width:100%;min-width:680px;border-collapse:collapse;font-size:.95rem;line-height:1.55}
+.legal th,.legal td{padding:12px 14px;text-align:left;vertical-align:top;border-bottom:1px solid rgba(7,104,154,.12)}
+.legal th{background:#eaf4fa;color:#0b2e44;font-weight:600}
+.legal tr:last-child td{border-bottom:0}
+.legal__req{margin-top:40px;padding:20px 24px;background:#f3f9fc;border-radius:20px;line-height:1.7;font-size:.95rem}
+.legal__foot{margin-top:24px}
+@media (max-width:600px){.legal{border-radius:22px}.legal__req{padding:16px 18px}}
