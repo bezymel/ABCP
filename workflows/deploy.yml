@@ -1,4 +1,4 @@
-ame: Deploy to Yandex Object Storage
+name: Deploy to Yandex Object Storage
 
 on:
   push:
