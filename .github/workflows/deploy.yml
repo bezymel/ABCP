@@ -23,8 +23,7 @@ jobs:
           AWS_DEFAULT_REGION: ru-central1
         run: |
           # Если файлы лежат в корне репозитория:
-          aws s3 sync ./ s3://${{ secrets.YC_BUCKET_NAME }} \
+          aws s3 sync ./new.abcp-master-site s3://abcp-master.ru \
             --endpoint-url=https://storage.yandexcloud.net \
-            --exclude ".git/*" \
-            --exclude ".github/*" \
+            --cache-control "no-cache, must-revalidate" \
             --delete
