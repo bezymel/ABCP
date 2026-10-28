@@ -58,4 +58,52 @@
   }
   openFromHash();
   window.addEventListener('hashchange', openFromHash);
+
+  /* ---------- Микроразметка FAQPage (JSON-LD) ---------- */
+
+  function clean(text) {
+    return (text || '').replace(/\s+/g, ' ').trim();
+  }
+
+  function buildFaqSchema() {
+    var entities = [];
+
+    Array.prototype.forEach.call(list.querySelectorAll('.faq__item'), function (item) {
+      var btn = item.querySelector('.faq__btn');
+      var body = item.querySelector('.faq__a-body');
+      if (!btn || !body) return;
+
+      // Текст вопроса берём без декоративной иконки
+      var btnClone = btn.cloneNode(true);
+      var icon = btnClone.querySelector('.faq__icon');
+      if (icon) icon.remove();
+
+      var question = clean(btnClone.textContent);
+      var answer = clean(body.textContent);
+      if (!question || !answer) return;
+
+      entities.push({
+        '@type': 'Question',
+        name: question,
+        acceptedAnswer: { '@type': 'Answer', text: answer }
+      });
+    });
+
+    if (!entities.length) return;
+
+    var old = document.getElementById('faq-jsonld');
+    if (old) old.remove();
+
+    var script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.id = 'faq-jsonld';
+    script.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: entities
+    });
+    document.head.appendChild(script);
+  }
+
+  buildFaqSchema();
 })();
