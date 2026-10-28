@@ -1,0 +1,184 @@
+.faq {
+  --faq-accent: var(--color-primary, #07689a);
+  --faq-border: color-mix(in srgb, currentColor 14%, transparent);
+  --faq-bg: rgba(255, 255, 255, 0.72);
+  --faq-radius: 20px;
+  --faq-speed: 0.3s;
+}
+
+.faq__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: clamp(24px, 4vw, 56px);
+  align-items: start;
+}
+
+.faq__aside {
+  position: sticky;
+  top: 110px;
+}
+
+.faq__lead {
+  margin: 16px 0 24px;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+.faq__list {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.faq__item {
+  border: 1px solid var(--faq-border);
+  border-radius: var(--faq-radius);
+  background: var(--faq-bg);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition: border-color var(--faq-speed), box-shadow var(--faq-speed);
+}
+
+.faq__item:hover {
+  border-color: color-mix(in srgb, var(--faq-accent) 40%, transparent);
+}
+
+.faq__item.is-open {
+  border-color: var(--faq-accent);
+  box-shadow: 0 12px 32px -16px color-mix(in srgb, var(--faq-accent) 55%, transparent);
+}
+
+.faq__q {
+  margin: 0;
+  font: inherit;
+}
+
+.faq__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  padding: 20px 24px;
+  border: 0;
+  border-radius: var(--faq-radius);
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-size: clamp(16px, 1.6vw, 18px);
+  font-weight: 600;
+  line-height: 1.35;
+  text-align: left;
+  cursor: pointer;
+}
+
+.faq__btn:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--faq-accent) 55%, transparent);
+  outline-offset: -3px;
+}
+
+/* Иконка «плюс» превращается в «минус» */
+.faq__icon {
+  position: relative;
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--faq-accent) 12%, transparent);
+  transition: background var(--faq-speed), transform var(--faq-speed);
+}
+
+.faq__icon::before,
+.faq__icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 14px;
+  height: 2px;
+  margin: -1px 0 0 -7px;
+  border-radius: 2px;
+  background: var(--faq-accent);
+  transition: transform var(--faq-speed), background var(--faq-speed);
+}
+
+.faq__icon::after {
+  transform: rotate(90deg);
+}
+
+.faq__item.is-open .faq__icon {
+  background: var(--faq-accent);
+  transform: rotate(180deg);
+}
+
+.faq__item.is-open .faq__icon::before,
+.faq__item.is-open .faq__icon::after {
+  background: #fff;
+}
+
+.faq__item.is-open .faq__icon::after {
+  transform: rotate(0deg);
+}
+
+/* Плавное раскрытие. Без JS (класс .js не добавлен) ответы остаются видимыми */
+.js .faq__a {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows var(--faq-speed) ease;
+}
+
+.js .faq__item.is-open .faq__a {
+  grid-template-rows: 1fr;
+}
+
+.js .faq__a-inner {
+  min-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transition: visibility 0s linear var(--faq-speed);
+}
+
+.js .faq__item.is-open .faq__a-inner {
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.faq__a-body {
+  padding: 0 24px 22px;
+  line-height: 1.65;
+  opacity: 0.85;
+}
+
+.faq__a-body p {
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .faq__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .faq__aside {
+    position: static;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq__btn {
+    padding: 16px 18px;
+  }
+
+  .faq__a-body {
+    padding: 0 18px 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .faq *,
+  .faq *::before,
+  .faq *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
