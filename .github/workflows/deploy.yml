@@ -1,0 +1,40 @@
+name: Deploy to Yandex Object Storage
+
+on:
+  push:
+    branches:
+      - main # Пайплайн будет запускаться при пуше в ветку main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Скачиваем код из GitHub
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. (ОПЦИОНАЛЬНО) Настраиваем Node.js и собираем проект
+      # Если у вас обычный HTML или файлы не нужно собирать, удалите этот шаг
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Укажите нужную версию Node
+      - name: Install dependencies and Build
+        run: |
+          npm ci
+          npm run build
+
+      # 3. Загружаем файлы в Yandex Object Storage
+      - name: Sync files to Yandex Cloud
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.YC_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.YC_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ru-central1 # Стандартный регион Яндекса
+        run: |
+          # Укажите правильную папку. 
+          # Если это React/Vue, обычно папка dist или build.
+          # Если сборки нет, и вы отправляете корень репозитория, укажите ./ вместо ./dist
+          aws s3 sync ./dist s3://${{ secrets.YC_BUCKET_NAME }} \
+            --endpoint-url=https://storage.yandexcloud.net \
+            --delete
