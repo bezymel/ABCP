@@ -14,18 +14,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. (ОПЦИОНАЛЬНО) Настраиваем Node.js и собираем проект
-      # Если у вас обычный HTML или файлы не нужно собирать, удалите этот шаг
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20' # Укажите нужную версию Node
-      - name: Install dependencies and Build
-        run: |
-          npm ci
-          npm run build
-
-      # 3. Загружаем файлы в Yandex Object Storage
+      # 2. Загружаем файлы в Yandex Object Storage
       - name: Sync files to Yandex Cloud
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.YC_ACCESS_KEY_ID }}
