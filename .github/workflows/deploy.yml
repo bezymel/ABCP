@@ -3,27 +3,28 @@ name: Deploy to Yandex Object Storage
 on:
   push:
     branches:
-      - main # Пайплайн будет запускаться при пуше в ветку main
+      - main # Срабатывает при пуше в main
+  workflow_dispatch: # Позволяет запускать вручную кнопкой в Actions
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Скачиваем код из GitHub
+      # 1. Скачиваем код из репозитория
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. Загружаем файлы в Yandex Object Storage
+      # 2. Синхронизируем файлы с Yandex Object Storage
       - name: Sync files to Yandex Cloud
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.YC_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.YC_SECRET_ACCESS_KEY }}
-          AWS_DEFAULT_REGION: ru-central1 # Стандартный регион Яндекса
+          AWS_DEFAULT_REGION: ru-central1
         run: |
-          # Укажите правильную папку. 
-          # Если это React/Vue, обычно папка dist или build.
-          # Если сборки нет, и вы отправляете корень репозитория, укажите ./ вместо ./dist
-          aws s3 sync ./dist s3://${{ secrets.YC_BUCKET_NAME }} \
+          # Если файлы лежат в корне репозитория:
+          aws s3 sync ./ s3://${{ secrets.YC_BUCKET_NAME }} \
             --endpoint-url=https://storage.yandexcloud.net \
+            --exclude ".git/*" \
+            --exclude ".github/*" \
             --delete
