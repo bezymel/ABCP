@@ -782,18 +782,22 @@
       <div class="card card--glow form-card" data-reveal="right">
         <h3>Обсудим ваш проект</h3>
         <p>Расскажите, есть ли у вас действующий сайт на ABCP и какую задачу нужно решить. Я изучу информацию, предложу подходящий вариант работ и предварительно сориентирую по стоимости. Обычно отвечаю в течение одного рабочего часа.</p>
-        <form class="form" id="contact-form" novalidate data-endpoint="" data-mailto="mailto:abcp-master@yandex.ru">
+        <form class="form" id="contact-form" novalidate data-endpoint="" data-mailto="abcp-master@ya.ru">
           <div class="form__row">
             <div class="field"><input type="text" id="f-name" name="name" placeholder=" " autocomplete="name" required><label for="f-name">Имя</label></div>
             <div class="field"><input type="email" id="f-email" name="email" placeholder=" " autocomplete="email" required><label for="f-email">Email</label></div>
           </div>
           <div class="field"><input type="tel" id="f-phone" name="phone" placeholder=" " autocomplete="tel" inputmode="tel"><label for="f-phone">Телефон</label></div>
           <div class="field"><textarea id="f-task" name="task" placeholder=" " rows="4"></textarea><label for="f-task">Описание задачи</label></div>
-          <fieldset class="fieldset"><legend>Удобный способ связи</legend><div class="choices">
-            <label class="choice"><input type="radio" name="method" value="Телефон" checked><span>Телефон</span></label>
-            <label class="choice"><input type="radio" name="method" value="Telegram"><span>Telegram</span></label>
-            <label class="choice"><input type="radio" name="method" value="MAX"><span>MAX</span></label>
-            <label class="choice"><input type="radio" name="method" value="Email"><span>Email</span></label></div></fieldset>
+          <fieldset class="fieldset">
+          <legend>Удобный способ связи (можно выбрать несколько)</legend>
+            <div class="choices">
+            <label class="choice"><input type="checkbox" name="method" value="Телефон" checked><span>Телефон</span></label>
+            <label class="choice"><input type="checkbox" name="method" value="Telegram"><span>Telegram</span></label>
+            <label class="choice"><input type="checkbox" name="method" value="MAX"><span>MAX</span></label>
+            <label class="choice"><input type="checkbox" name="method" value="Email"><span>Email</span></label>
+            </div>
+          </fieldset>  
           <div class="field"><input type="url" id="f-site" name="site" placeholder=" " autocomplete="url"><label for="f-site">Адрес действующего сайта — при наличии</label></div>
           <div class="hp" aria-hidden="true"><input type="text" name="company_hp" tabindex="-1" autocomplete="off"></div>
           <label class="check"><input type="checkbox" name="consent" required><span>Нажимая на кнопку, вы соглашаетесь с условиями обработки <a href="#">персональных данных</a> и <a href="#">политикой конфиденциальности</a></span></label>
