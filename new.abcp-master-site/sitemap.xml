@@ -6,4 +6,9 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+<url><loc>https://abcp-master.ru/services/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://abcp-master.ru/projects/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://abcp-master.ru/reviews/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://abcp-master.ru/pricing/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://abcp-master.ru/faq/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
