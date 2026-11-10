@@ -10,7 +10,7 @@
     });
     var els = A.qsa('[data-reveal]');
     function clean(el) { el.removeAttribute('data-reveal'); el.style.removeProperty('--d'); }
-    if (A.reduced || !('IntersectionObserver' in w)) { els.forEach(clean); return; }
+    if (!('IntersectionObserver' in w)) { els.forEach(clean); return; }
     function show(el) {
       el.classList.add('is-visible');
       el.addEventListener('transitionend', function f(e) {

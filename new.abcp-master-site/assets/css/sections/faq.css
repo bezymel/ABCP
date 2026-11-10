@@ -176,9 +176,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .faq *,
-  .faq *::before,
-  .faq *::after {
-    transition-duration: 0.01ms !important;
+  .faq__icon {
+    transition-duration: 0.01ms;
   }
 }

@@ -87,7 +87,7 @@
 
       function goTo(n) {
         pageNo = n; target = posOfPage(n);
-        if (A.reduced) { stop(); pos = target; vel = 0; normalize(); render(); } else run();
+        run();
       }
 
       function clone(el) {

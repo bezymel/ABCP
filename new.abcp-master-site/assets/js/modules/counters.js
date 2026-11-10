@@ -2,7 +2,7 @@
 (function (w, d) {
   var A = w.ABCP;
   A.register('counters', function () {
-    if (A.reduced || !('IntersectionObserver' in w)) return;
+    if (!('IntersectionObserver' in w)) return;
     function run(el) {
       var to = parseFloat(el.dataset.count), suf = el.dataset.suffix || '', t0 = null, dur = 1700;
       function step(t) {
@@ -15,7 +15,7 @@
     }
     var io = new IntersectionObserver(function (es) {
       es.forEach(function (e) { if (e.isIntersecting) { run(e.target); io.unobserve(e.target); } });
-    }, { threshold: 0.6 });
+    }, { threshold: 0.2 });
     A.qsa('[data-count]').forEach(function (el) { io.observe(el); });
   });
 })(window, document);

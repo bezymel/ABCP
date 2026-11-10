@@ -1,5 +1,7 @@
 .card{position:relative;background:var(--card);border-radius:var(--radius-xl);padding:clamp(24px,3.2vw,48px);box-shadow:var(--shadow-sm);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
 .card--lift:hover{transform:translateY(-8px);box-shadow:var(--shadow-md)}
+.card--glow{box-shadow:0 12px 36px rgba(7,104,154,.08),0 2px 8px rgba(7,104,154,.04)}
+.card--glow:hover{box-shadow:0 22px 55px rgba(7,104,154,.16)}
 .card--flat{padding:0;overflow:hidden}
 .card[data-tilt]{transition:transform .25s ease-out,box-shadow .5s var(--ease)}
 .media{position:relative;overflow:hidden;border-radius:var(--radius-lg);background:linear-gradient(135deg,#d8eaf4,#bcd8e8 55%,#e8f2f8);isolation:isolate}

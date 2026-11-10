@@ -8,7 +8,7 @@
       function pad(n) { return n < 10 ? '0' + n : '' + n; }
       function go(n) { slides[i].classList.remove('is-active'); i = (n + slides.length) % slides.length; slides[i].classList.add('is-active'); if (cur) cur.textContent = pad(i + 1); }
       function stop() { clearInterval(timer); }
-      function play() { stop(); if (A.reduced || slides.length < 2) return; timer = setInterval(function () { go(i + 1); }, 5500); }
+      function play() { stop(); if (slides.length < 2) return; timer = setInterval(function () { go(i + 1); }, 5500); }
       if (tot) tot.textContent = pad(slides.length);
       A.qs('[data-prev]', root).addEventListener('click', function () { go(i - 1); play(); });
       A.qs('[data-next]', root).addEventListener('click', function () { go(i + 1); play(); });

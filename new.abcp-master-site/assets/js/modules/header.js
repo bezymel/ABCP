@@ -15,8 +15,13 @@
     d.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
     d.addEventListener('click', function (e) { if (!h.contains(e.target)) close(); });
     var links = A.qsa('.nav__link'), map = {};
-    links.forEach(function (l) { map[l.getAttribute('href').slice(1)] = l; });
-    if (!('IntersectionObserver' in w)) return;
+    links.forEach(function (l) {
+      var href = l.getAttribute('href') || '';
+      var slug = href.replace(/^\/|\/$/g, '');
+      if (slug) map[slug] = l;
+    });
+    var isHome = location.pathname === '/' || location.pathname === '/index.html' || location.pathname === '';
+    if (!isHome || !('IntersectionObserver' in w)) return;
     var io = new IntersectionObserver(function (es) {
       es.forEach(function (e) {
         if (!e.isIntersecting) return;

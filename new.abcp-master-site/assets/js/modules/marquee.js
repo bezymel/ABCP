@@ -23,7 +23,7 @@
       function pause(ms) { until = Math.max(until, now() + ms); }
       function frame(t) {
         var dt = Math.min(64, t - last) / 1000; last = t;
-        var run = visible && !hover && !A.reduced && now() >= until;
+        var run = visible && !hover && now() >= until;
         st.forEach(function (s) {
           if (!s.w) return;
           var r = s.row, sl = r.scrollLeft, delta = 0;
