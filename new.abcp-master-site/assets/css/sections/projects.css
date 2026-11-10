@@ -4,7 +4,7 @@
 /* viewport обрезает ленту; отступы оставляют место под тени и подъём карточек */
 .pslider__viewport{overflow:hidden;padding:14px 0 30px;margin:-14px 0 -14px;cursor:grab;
   touch-action:pan-y;           /* вертикальный скролл страницы работает, горизонтальный жест забираем мы */
-  user-select:none;-webkit-user-select:none;max-width:100%;contain:paint}
+  user-select:none;-webkit-user-select:none;max-width:100%}
 .pslider__viewport.is-dragging{cursor:grabbing}
 .pslider__viewport.is-dragging .project__link::after{cursor:grabbing}
 .pslider__viewport:focus-visible{outline-offset:-3px}

@@ -9,7 +9,7 @@
 
 .scroll-progress{position:fixed;top:0;left:0;height:4px;width:100%;transform-origin:left;transform:scaleX(0);background:linear-gradient(90deg,var(--primary),var(--accent));z-index:300}
 /* Фоновые светящиеся сферы */
-.bg-orbs{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:-1;max-width:100vw;contain:paint}
+.bg-orbs{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:-1}
 .bg-orbs i{position:absolute;border-radius:50%;filter:blur(90px);opacity:.42;animation:blob 20s ease-in-out infinite alternate}
 .bg-orbs i:nth-child(1){width:520px;height:520px;background:#bfe0f2;top:-120px;left:-120px;animation-duration:22s}
 .bg-orbs i:nth-child(2){width:580px;height:580px;background:#d8eefc;top:32%;right:-140px;animation-duration:26s;animation-delay:-6s}
