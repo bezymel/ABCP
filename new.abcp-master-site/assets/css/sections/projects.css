@@ -1,10 +1,10 @@
 /* Слайдер проектов: бесшовная лента, 4 карточки на широких экранах, 2 на планшете, 1 на телефоне */
-.pslider{--pv:4;--gap:20px;--ease-soft:cubic-bezier(.22,.61,.36,1);position:relative}
+.pslider{--pv:4;--gap:20px;--ease-soft:cubic-bezier(.22,.61,.36,1);position:relative;overflow:hidden;max-width:100%}
 
 /* viewport обрезает ленту; отступы оставляют место под тени и подъём карточек */
-.pslider__viewport{overflow:hidden;padding:14px 2px 30px;margin:-14px -2px -14px;cursor:grab;
+.pslider__viewport{overflow:hidden;padding:14px 0 30px;margin:-14px 0 -14px;cursor:grab;
   touch-action:pan-y;           /* вертикальный скролл страницы работает, горизонтальный жест забираем мы */
-  user-select:none;-webkit-user-select:none}
+  user-select:none;-webkit-user-select:none;max-width:100%;contain:paint}
 .pslider__viewport.is-dragging{cursor:grabbing}
 .pslider__viewport.is-dragging .project__link::after{cursor:grabbing}
 .pslider__viewport:focus-visible{outline-offset:-3px}

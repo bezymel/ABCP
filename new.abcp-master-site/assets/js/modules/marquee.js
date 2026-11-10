@@ -85,7 +85,13 @@ r.addEventListener('click', function (e) {
       if (prev) prev.addEventListener('click', function () { nudge(-1); });
       if (next) next.addEventListener('click', function () { nudge(1); });
       if ('IntersectionObserver' in w) new IntersectionObserver(function (es) { visible = es[0].isIntersecting; }).observe(box);
-      var tm; w.addEventListener('resize', function () { clearTimeout(tm); tm = setTimeout(buildAll, 200); });
+      var tm, lastWidth = w.innerWidth;
+      w.addEventListener('resize', function () {
+        if (w.innerWidth === lastWidth) return;
+        lastWidth = w.innerWidth;
+        clearTimeout(tm);
+        tm = setTimeout(buildAll, 200);
+      });
       buildAll(); w.addEventListener('load', buildAll);
       w.requestAnimationFrame(function (t) { last = t; frame(t); });
     });

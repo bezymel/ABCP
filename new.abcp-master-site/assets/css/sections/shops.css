@@ -1,5 +1,5 @@
 /* Блок «Магазины, которые я запускал и сопровождаю»: две бегущие строки, которые можно листать */
-.shops{margin-top:clamp(20px,2.4vw,32px);padding:clamp(22px,3vw,44px) 0 clamp(18px,2.4vw,32px);overflow:hidden}
+.shops{margin-top:clamp(20px,2.4vw,32px);padding:clamp(22px,3vw,44px) 0 clamp(18px,2.4vw,32px);overflow:hidden;max-width:100%;contain:paint}
 .shops__head{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:0 clamp(20px,3vw,44px);margin-bottom:clamp(14px,2vw,24px)}
 .shops__head h3{font-size:clamp(1.3rem,2.3vw,1.9rem)}
 .shops__nav{display:flex;gap:10px}

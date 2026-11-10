@@ -71,6 +71,24 @@
   outline-offset: 3px;
 }
 
+@media (max-width: 640px) {
+  .to-top {
+    right: 16px;
+    bottom: 18px;
+    width: 46px;
+    height: 46px;
+    z-index: 1002;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .25);
+  }
+  .to-top svg {
+    width: 20px;
+    height: 20px;
+  }
+  body.has-cookie .to-top {
+    bottom: 190px;
+  }
+}
+
 .footer .logo{display:block;margin-bottom:16px}
 .footer .logo__img{display:block;width:100%;max-width:260px;height:auto}
 .footer__social{display:flex;align-items:center;gap:12px}

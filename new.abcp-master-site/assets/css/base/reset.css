@@ -1,6 +1,7 @@
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--dark);font-family:var(--font);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:hidden;max-width:100%}
+body{margin:0;background:var(--bg);color:var(--dark);font-family:var(--font);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;max-width:100%;width:100%;position:relative}
+main{overflow-x:hidden;max-width:100%;width:100%;position:relative}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
 ul,ol{margin:0;padding:0;list-style:none}

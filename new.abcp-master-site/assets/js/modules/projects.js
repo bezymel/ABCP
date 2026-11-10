@@ -208,7 +208,13 @@
       }, true);
       view.addEventListener('dragstart', function (e) { e.preventDefault(); });
 
-      var tm; w.addEventListener('resize', function () { clearTimeout(tm); tm = setTimeout(measure, 150); });
+      var tm, lastWidth = w.innerWidth;
+      w.addEventListener('resize', function () {
+        if (w.innerWidth === lastWidth) return;
+        lastWidth = w.innerWidth;
+        clearTimeout(tm);
+        tm = setTimeout(measure, 150);
+      });
       measure(); w.addEventListener('load', measure);
     });
   });
