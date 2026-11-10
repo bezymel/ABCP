@@ -7,6 +7,8 @@
       var st = rows.map(function (r) {
         return { row: r, dir: r.getAttribute('data-dir') === 'right' ? -1 : 1, orig: A.qsa(':scope > *', r), pos: 0, last: 0, w: 0, rem: 0, drag: null };
       });
+      /* На телефоне лента не едет сама и листается по одной карточке (scroll-snap в shops.css) */
+      var snapMq = w.matchMedia('(max-width: 679px)');
       function now() { return w.performance.now(); }
       function build(s) {
         A.qsa('[data-clone]', s.row).forEach(function (n) { n.remove(); });
@@ -23,7 +25,7 @@
       function pause(ms) { until = Math.max(until, now() + ms); }
       function frame(t) {
         var dt = Math.min(64, t - last) / 1000; last = t;
-        var run = visible && !hover && now() >= until;
+        var run = visible && !hover && now() >= until && !snapMq.matches;
         st.forEach(function (s) {
           if (!s.w) return;
           var r = s.row, sl = r.scrollLeft, delta = 0;
@@ -79,6 +81,13 @@ r.addEventListener('click', function (e) {
       box.addEventListener('pointerleave', function () { hover = false; });
       function nudge(dir) {
         pause(1800);
+        if (snapMq.matches) {
+          st.forEach(function (s) {
+            var gap = parseFloat(w.getComputedStyle(s.row).columnGap) || 0;
+            s.row.scrollBy({ left: dir * (s.orig[0].getBoundingClientRect().width + gap), behavior: 'smooth' });
+          });
+          return;
+        }
         st.forEach(function (s) { var it = s.orig[0]; s.rem += dir * (it.getBoundingClientRect().width + 16) * 2; });
       }
       var prev = A.qs('[data-marquee-prev]', box), next = A.qs('[data-marquee-next]', box);

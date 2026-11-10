@@ -27,4 +27,9 @@
   outline: 2px solid currentColor;
   outline-offset: 4px;
 }
-@media(max-width:480px){.shop{width:72vw}.shops__nav .slider__btn{width:42px;height:42px}}
+@media(max-width:679px){
+  /* Телефон: одна карточка на экран, лента встаёт строго по центру карточки, соседние не видны */
+  .shops__row{padding-left:16px;padding-right:16px;scroll-snap-type:x mandatory;-webkit-mask-image:none;mask-image:none}
+  .shop{width:100%;scroll-snap-align:center;scroll-snap-stop:always}
+  .shops__nav .slider__btn{width:42px;height:42px}
+}
